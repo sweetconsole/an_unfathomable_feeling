@@ -691,7 +691,7 @@ label unfathomable_feeling_day_1:
     "« Если это и сон, {w}то я вынесу из него какие-то навыки, {w}всяко лучше чем бродить по лагерю без дела, {w}или что ещё хуже — выполнять поручения вожатой.»"
     "Музыка затихла"
 
-    scene int_musclub_sunset
+    scene bg int_musclub_sunset
 
     show mi normal pioneer with fade
 
