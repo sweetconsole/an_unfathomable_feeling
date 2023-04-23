@@ -583,10 +583,10 @@ label unfathomable_feeling_day_1:
     show mi happy pioneer with fade
 
     mi "А-а-а. Нужно было спасать тебя."
-    "она улыбнулась."
+    "Она улыбнулась."
 
     me "У тебя убедительно получилось"
-    "я ответил ей улыбкой."
+    "Я ответил ей улыбкой."
 
     mi "Спасибо. {w}Ну что, куда теперь?"
 
@@ -618,9 +618,10 @@ label unfathomable_feeling_day_1:
     window hide
     pause(1.5)
 
-    scene bg int_music_club_mattresses_sunset
+    scene bg int_musclub_sunset
 
     play sound sfx_close_door_1
+    play ambience ambience_music_club_day loop fadein 4
 
     hide blink
     show unblink
@@ -708,6 +709,8 @@ label unfathomable_feeling_day_1:
     show blink
     pause(1.5)
 
+    stop ambience
+
     "Ужин прошёл в молчаливой компании Лены. {w}После болтливой Мику мне стало не комфортно в тишине."
     "Я хотел было сходить к ней снова, {w}но не хотелось навязываться, {w}да и я не знал где она живёт."
     "А также мне нужно было к Ольге Дмитриевной за формой и местом жительства."
@@ -721,13 +724,13 @@ label unfathomable_feeling_day_1:
 
     "Она стояла возле своего домика, {w}держа в руках пакет, {w}неизвестного мне содержания."
 
-    me "Здравствуйте, {w}я обошёл лагерь, {w}вот листок"
+    me "Здравствуйте, {w}я обошёл лагерь, {w}вот листок."
     "Я протянул ей бумажку. {w}Она сложила её и положила в карман."
 
-    cs "Итак, вот твоя форма"
-    "Она протянула мне пакет"
-    cs "Там же умывальные принадлежности и ключ от моего домика. {w}Ты будешь жить со мной."
-    cs "Можешь прогуляться перед сном. {w}Отбой в 10."
+    mt "Итак, вот твоя форма."
+    "Она протянула мне пакет."
+    mt "Там же умывальные принадлежности и ключ от моего домика. {w}Ты будешь жить со мной."
+    mt "Можешь прогуляться перед сном. {w}Отбой в 10."
 
     me "Хорошо. {w}Сладких снов."
     "Ольга Дмитриевна куда-то ушла."
@@ -743,6 +746,7 @@ label unfathomable_feeling_day_1:
     show mi normal pioneer
 
     play ambience ambience_ext_road_night loop
+    play music music_list["i_dont_blame_you"] loop fadein 2
 
     hide blink
     show unblink
@@ -759,7 +763,7 @@ label unfathomable_feeling_day_1:
     mi "Виделись! {w}А что ты здесь делаешь? {w}Ты пришёл узнать что-то, {w}или уточнить, {w}да?"
     "Она улыбнулась."
 
-    me "Нет, {w}я здесь не подалёку."
+    me "Нет, {w}я здесь неподалёку."
     "Я указал на домик."
 
     show mi shy pioneer with fade
@@ -769,6 +773,8 @@ label unfathomable_feeling_day_1:
 
     show blink
     pause(1.5)
+
+    play music music_list["what_do_you_think_of_me"] loop fadein 2
 
     "Я гулял вплоть до захода солнца и {w}уже когда возвращался домой увидел улыбающийся силуэт в пионерской форме среди леса."
     "«Наверное показалось», {w}— подумал я и забрел в свой домик."
