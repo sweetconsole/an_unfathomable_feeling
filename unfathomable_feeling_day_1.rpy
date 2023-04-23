@@ -646,7 +646,7 @@ label unfathomable_feeling_day_1:
     window hide
     pause(1.5)
 
-    hide mi happy pioneer with dissolve
+    hide mi happy pioneer
 
     scene me_mi_piano_musclub
 
@@ -660,8 +660,6 @@ label unfathomable_feeling_day_1:
     "Я ошарашено сидел, {w}не зная что делать. {w}«Что происходит?»."
     "«Да она пикапит тебя, {w}успокойся и наслаждайся моментом», {w}— голос вернулся."
     "Она положила свои пальцы на мои и начала водить по клавишам."
-
-    show mi happy pioneer with fade
 
     mi "Вот в этом месте."
     "Она проиграла моей рукой отрывок."
