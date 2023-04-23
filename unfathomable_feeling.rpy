@@ -13,6 +13,7 @@ init:
     image day2_breakfast = path_dir + "images/cg/day2_breakfast.jpg"
     image me_mi_guitar_musclub = path_dir + "images/cg/me_mi_guitar_musclub.jpg"
     image me_mi_piano_musclub = path_dir + "images/cg/me_mi_piano_musclub.jpg"
+    image mi_piano_musclub = path_dir + "images/cg/mi_piano_musclub.jpg"
     
 
 label unfathomable_feeling_start:
