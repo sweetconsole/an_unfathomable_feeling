@@ -636,7 +636,7 @@ label unfathomable_feeling_day_2:
 
     "Ужин. Ну что же, стоит подкрепится перед встречей."
 
-    scene int_dining_hall_people_sunset
+    scene bg int_dining_hall_people_sunset
 
     play music music_list["what_do_you_think_of_me"] loop fadein 2
     play ambience ambience_dining_hall_full loop fadein 4
@@ -671,7 +671,7 @@ label unfathomable_feeling_day_2:
     window hide
     pause(1.5)
 
-    hide nt normal
+    hide ck normal
 
     show el serious pioneer
     show mt normal pioneer
@@ -703,7 +703,7 @@ label unfathomable_feeling_day_2:
     hide el serious pioneer
     hide mt normal pioneer
 
-    show nt normal
+    show ck normal
 
     hide blink
     show unblink
@@ -719,7 +719,7 @@ label unfathomable_feeling_day_2:
     window hide
     pause(1.5)
 
-    hide nt normal
+    hide ck normal
 
     show el serious pioneer
     show mt normal pioneer
