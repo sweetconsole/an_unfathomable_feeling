@@ -39,19 +39,22 @@ label unfathomable_feeling_day_1:
     "{w}Лето? {w}Какого чёрта?!"
 
     show blink
+    window hide
+    pause(1.5)
 
-    pause(1)
+    $ persistent.sprite_time = "day"
 
-    hide bg int_bus
+    scene ext_bus
+
+    play music music_list["confession_oboe"] loop fadein 2
 
     hide blink
     show unblink
+    pause(1.5)
+    window show
 
-    show ext_bus with fade
-
-    "Я мигом вылетел из автобуса, {w}оттолкнув девушку, будившую меня. {w}Точно — лето! {w}Зелёная трава, {w}синее небо, {w}очень жаркое солнце."
-
-    play music music_list["confession_oboe"] loop fadein 2
+    "Я мигом вылетел из автобуса, {w}оттолкнув девушку, будившую меня."
+    "{w}Точно — лето! {w}Зелёная трава, {w}синее небо, {w}очень жаркое солнце."
     
     "Я упал на теплый асфальт, {w}больно приложившись головой об клумбу."
     "Эта боль разрушила последние надежды на то, {w}что всё происходящее сон. {w}И мне оставалось только скрючиться на земле, {w}отходя от шока."
@@ -596,6 +599,8 @@ label unfathomable_feeling_day_1:
     "Библиотека была пройдена без происшествий, {w}тамошний библиотекарь быстро расписалась и продолжила изучать мелкие детали в недрах стола."
 
     scene ext_houses_sunset with fade
+
+    $ persistent.sprite_time = "sunset"
 
     play music music_list["forest_maiden"] loop fadein 2
 
