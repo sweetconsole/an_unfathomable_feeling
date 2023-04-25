@@ -653,7 +653,7 @@ label unfathomable_feeling_day_2:
     
     "Я подошёл к раздаче."
 
-    show nt normal with fade
+    show ck normal with fade
 
     me "Извините, {w}не могли бы вы дать ужин моему другу, {w}он прихворал и не смог прийти."
     "Я тепло улыбнулся."
@@ -673,8 +673,8 @@ label unfathomable_feeling_day_2:
 
     hide ck normal
 
-    show el serious pioneer
-    show mt normal pioneer
+    show el serious pioneer at right
+    show mt normal pioneer at left
 
     hide blink
     show unblink
@@ -721,8 +721,8 @@ label unfathomable_feeling_day_2:
 
     hide ck normal
 
-    show el serious pioneer
-    show mt normal pioneer
+    show el serious pioneer at right
+    show mt normal pioneer at left
 
     hide blink
     show unblink
@@ -748,7 +748,8 @@ label unfathomable_feeling_day_2:
 
     scene bg ext_boathouse_sunset
 
-    play ambience ambience_boat_station_night
+    play music music_list["confession_oboe"] loop fadein 2
+    play ambience ambience_boat_station_night loop fadein 4
 
     hide blink
     show unblink
@@ -782,6 +783,8 @@ label unfathomable_feeling_day_2:
     
     scene ext_beach_sunset with fade
 
+    play music music_list["memories"] loop fadein 2
+
     "Солнце уходило за горизонт, {w}оставляя после себя слабое красное свечение."
     "Это зрелище было завораживающе, {w}но даже оно не могло посоревноваться в красоте с лицом Мику."
       
@@ -809,6 +812,8 @@ label unfathomable_feeling_day_2:
     pause(1.5)
 
     scene bg ext_boathouse_night
+    
+    play music music_list["orchid"] loop fadein 2
 
     hide blink
     show unblink
@@ -820,7 +825,7 @@ label unfathomable_feeling_day_2:
     "Мику?"
     "Я повернулся."
     
-    show pi with fade
+    show pi normal with fade
 
     "Почти угадал."
     "Передо мной сидел пионер, {w}но я не видел его глаз, {w}они были закрыты тенью."
@@ -848,6 +853,9 @@ label unfathomable_feeling_day_2:
     "Он ржал во весь голос."
 
     "Вся ярость, {w}что переполняла мою душу, {w}вылилась в кулак, {w}который полетел в сторону неизвестного пионера." 
+    
+    stop music
+    
     "Удар обещал быть мощным. {w}Он перелетел всё пространство, {w}что разделяло нас, {w}и попал прямо в... {w}воздух. {w}Пионер испарился." 
     
     play sound sfx_water_emerge
@@ -867,6 +875,8 @@ label unfathomable_feeling_day_2:
     show unblink
     pause(1.5)
     window show
+
+    play music music_list["your_bright_side"] loop fadein 2
 
     "Путь домой я провёл в размышлениях о странном пионере, {w}который испортил мне вечер."
     "Зайдя домой, {w}я понял что был тут всего два раза за день: {w}утром, когда просыпался, {w}и сейчас."
