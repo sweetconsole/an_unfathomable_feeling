@@ -1,10 +1,10 @@
 
 init:
-    $ path_dir = "mods/an_unfathomable_feeling/"
+    $ path_dir = "an_unfathomable_feeling/"
 
-    $ mods["unfathomable_feeling_start"] = "{font=mods/an_unfathomable_feeling/fonts/pacifico.ttf}{color=#7C501A}Непостижимое чувство{/color}{/font}"
+    $ mods["unfathomable_feeling_start"] = "Непостижимое чувство"
 
-    define ck = Character(u"", color="#418AF9")
+    define ck = Character(u"Повар", color="#418AF9", what_color="#f1d076")
 
     image bg ext_musclub_day_sunset = path_dir + "images/bg/ext_music_club_sunset.jpg" 
     image bg ext_house_of_un_sunset = path_dir + "images/bg/ext_house_of_un_sunset.png"
