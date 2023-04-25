@@ -610,7 +610,7 @@ label unfathomable_feeling_day_1:
 
     scene bg ext_musclub_day_sunset with fade
 
-    play music music_list["waltz_of_doubts"] loop fadein 2
+    play music music_list["so_good_to_be_careless"] loop fadein 2
 
     "Когда мы дошли, {w}я осознал что музыкальный клуб — {w}это то здание, что я приметил когда зашёл за одной из построек клубов."
     
@@ -622,6 +622,7 @@ label unfathomable_feeling_day_1:
 
     play sound sfx_close_door_1
     play ambience ambience_music_club_day loop fadein 4
+    play music music_list["so_good_to_be_careless"] loop fadein 2
 
     hide blink
     show unblink
@@ -695,6 +696,9 @@ label unfathomable_feeling_day_1:
 
     show mi normal pioneer with fade
 
+    play ambience ambience_music_club_day loop fadein 4
+    play music music_list["so_good_to_be_careless"] loop fadein 2
+
     hide blink
     show unblink
     pause(1.5)
@@ -736,8 +740,10 @@ label unfathomable_feeling_day_1:
     "Я хотел было сходить к ней снова, {w}но не хотелось навязываться, {w}да и я не знал где она живёт."
     "А также мне нужно было к Ольге Дмитриевной за формой и местом жительства."
 
-    scene int_house_of_mt_sunset
+    scene ext_house_of_mt_sunset
     show mt normal pioneer 
+
+    play music music_list["so_good_to_be_careless"] loop fadein 2
 
     hide blink
     show unblink
@@ -808,6 +814,9 @@ label unfathomable_feeling_day_1:
 
     "Я разделся, повесил свою форму в шкаф, {w}обернулся посмотреть в зеркало и обомлел."
     "Это было не моё тело, {w}тело 17-летнего парня, {w}хотя в лице узнавались мои черты."
+
+    scene me_mirror_normal with fade
+
     "Я понял что сделать с этим ничего не смогу, {w}и решил смириться."
 
     show blink

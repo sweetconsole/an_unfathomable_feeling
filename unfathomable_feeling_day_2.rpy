@@ -118,6 +118,15 @@ label unfathomable_feeling_day_2:
     window hide
     pause(1.5)
 
+    scene ext_houses_sunset
+
+    play ambience ambience_camp_center_day loop fadein 4
+
+    hide blink
+    show unblink
+    pause(1.5)
+    window show
+
     "Когда мы двинулись, {w}моя спутница начала рассказывать о её снах и о том, {w}как она встретила утро."
     "А я? {w}А что я? {w}Я просто молчал, {w}наслаждался её компанией и любовался видами природы."
     "Как же здесь красиво: {w}сплошная зелень, {w}отовсюду веет свежестью и утренней прохладой, {w}словно этот лагерь был приманкой для кого-то."
@@ -126,10 +135,14 @@ label unfathomable_feeling_day_2:
     "Но мы не обратили на них особого внимания, нашей целью была столовая."
     "За разговорами Мику я и не заметил, {w}что мы оказались возле её входа."
 
+    show blink
+    window hide
+    pause(1.5)
+
     scene bg int_dining_hall_people_sunset
 
     play music music_list["what_do_you_think_of_me"] loop fadein 2
-    play ambience ambience_dining_hall_full
+    play ambience ambience_dining_hall_full loop fadein 4
 
     hide blink
     show unblink
@@ -223,7 +236,7 @@ label unfathomable_feeling_day_2:
 
     scene bg int_musclub_sunset
 
-    play music music_list["get_to_know_me_better"] loop fadein 2
+    play music music_list["so_good_to_be_careless"] loop fadein 2
     play ambience ambience_music_club_day loop fadein 4
 
     hide blink
@@ -265,6 +278,9 @@ label unfathomable_feeling_day_2:
 
     scene bg int_musclub_day
     show mi normal pioneer 
+
+    play ambience ambience_music_club_day loop fadein 4
+    play music music_list["so_good_to_be_careless"] loop fadein 2
 
     hide blink
     show unblink
@@ -324,6 +340,9 @@ label unfathomable_feeling_day_2:
     show mi normal pioneer at right
     show dv grin pioneer2 at left
 
+    play ambience ambience_music_club_day loop fadein 4
+    play music music_list["so_good_to_be_careless"] loop fadein 2
+
     hide blink
     show unblink
     pause(1.5)
@@ -366,6 +385,8 @@ label unfathomable_feeling_day_2:
     window hide
     pause(1.5)
 
+    stop ambience
+
     "Оставаться с ней не хотелось совсем."
 
     scene int_house_of_mt_day
@@ -403,7 +424,9 @@ label unfathomable_feeling_day_2:
     window hide
     pause(1.5)
 
-    scene ext_dining_hall_away_day
+    scene ext_houses_day
+
+    play ambience ambience_camp_center_day
 
     hide blink
     show unblink
@@ -418,7 +441,7 @@ label unfathomable_feeling_day_2:
     window hide
     pause(1.5)
 
-    scene int_house_of_mt_day
+    scene ext_dining_hall_away_day
 
     show mi sad pioneer 
 
@@ -435,6 +458,8 @@ label unfathomable_feeling_day_2:
 
     "Она грустно заглянула мне в глаза, {w}пытаясь найти что-нибудь в них, {w}надежда, {w}доверие читалось в её взгляде."
 
+    show mi happy with fade
+
     mi "Сегодня после ужина, {w}на пристани."
     "Она наградила меня лёгкой улыбкой."
 
@@ -448,6 +473,8 @@ label unfathomable_feeling_day_2:
     "Мы постояли так ещё несколько секунд, после чего разошлись."
 
     scene int_dining_hall_people_day
+
+    play ambience ambience_dining_hall_full loop fadein 4
 
     hide blink
     show unblink
@@ -512,4 +539,81 @@ label unfathomable_feeling_day_2:
     me "Есть за что."
     "Ответил я, вздыхая."
 
+    show blink
+    window hide
+    pause(1.5)
+
+    scene ext_clubs_day
+
+    play ambience ambience_clubs_inside_day loop fadein 4
+    play music music_list["no_tresspassing"] loop fadein 2 
+
+    hide blink
+    show unblink
+    pause(1.5)
+    window show
+
+    "Работа, {w}которую я должен был сделать для Слави была не очень тяжёлой."
+    "Мы с Электроником перетаскивали ящики с неизвестным содержимым со склада в кружок кибернетики, {w}а Шурик искал их на складе и подносил ко входу."
+
+    show el normal pioneer with fade
+
+    me "Да что вообще в этих ящиках?"
+    "Спросил я, {w}когда очередной ящик дополнил горку около здания кружков."
     
+    el "Всякая электроника, {w}несколько килограмм медной проволоки, пустые платы."
+    el "Так уж вышло, {w}что поставка новых запасов произошла перед нашей сменой." 
+    el "Всего ящиков двадцать, надо их перетащить в клуб и разложить по местам."
+    "Мы развернулись и направились к складу." 
+
+    me "Разложить? {w}Я тоже должен это делать?"
+    "Спросил я, {w}теряя последние надежды встретить Мику до ужина."
+    el "Конечно. {w}Ты же вызвался помочь."
+    "Сказал Электроник."
+
+    show blink
+    window hide
+    pause(1.5)
+
+    scene bg ext_storage_day
+
+    hide blink
+    show unblink
+    pause(1.5)
+    window show
+
+    "Здание склада уже виднелось из-за макушек деревьев, {w}покачивающихся в ритм дневному теплому ветру."
+
+    me "Раз вызвался... – вздохнул я."
+
+    "Оставшиеся ящики мы переносили ещё минут 20, {w}после чего позволили себе десять минут отдыха."
+    "Далее кибернетики раскладывали содержимое ящиков по полкам и в подсобку, {w}а я записывал что привезли, и сколько штук." 
+    "Работа была не столько тяжёлой, {w}сколько нудной. {w}Через час моя рука уже начинала отваливаться."
+
+    show blink
+    window hide
+    pause(1.5)
+
+    show el normal pioneer at left
+    show sh serious pioneer at right
+
+    hide blink
+    show unblink
+    pause(1.5)
+    window show
+
+    sh "Ребят, {w}сколько там ещё?"
+    "Устало спросил Шурик."
+
+    el "Последний!"
+    "Электроник принёс с улицы ещё один деревянный ящик."
+
+    sh "Давайте быстрее покончим с этим."
+    "Ответил за всех Шурик."
+
+    "К счастью, {w}в последней коробке оказалось лишь 2 мотка медной проволоки." 
+    "Быстро черкнув это в листке, {w}я пожал руки кибернетикам и удалился из клубов."
+
+    play sound sfx_dinner_horn_processed
+
+    "Мне уже хотелоль направиться к музыкальному кружку, {w}но горн остановил меня."

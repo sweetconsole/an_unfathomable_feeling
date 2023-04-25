@@ -6,6 +6,7 @@ init:
 
     image bg ext_musclub_day_sunset = path_dir + "images/bg/ext_music_club_sunset.jpg" 
     image bg ext_house_of_un_sunset = path_dir + "images/bg/ext_house_of_un_sunset.png"
+    image bg ext_storage_day = path_dir + "images/bg/ext_storage_day.png"
 
     image bg int_musclub_sunset = path_dir + "images/bg/int_music_club_mattresses_sunset.jpg"
     image bg int_dining_hall_people_sunset = path_dir + "images/bg/int_dining_hall_people_sunset.jpg"
