@@ -144,7 +144,7 @@ label unfathomable_feeling_day_2:
     window hide
     pause(1.5)
 
-    scene bg int_dining_hall_people_sunset
+    scene int_dining_hall_people_sunset
 
     play music music_list["what_do_you_think_of_me"] loop fadein 2
     play ambience ambience_dining_hall_full loop fadein 4
@@ -195,7 +195,7 @@ label unfathomable_feeling_day_2:
     window hide
     pause(1.5)
 
-    scene bg int_dining_hall_people_sunset
+    scene int_dining_hall_people_sunset
 
     show mi normal pioneer
 
@@ -239,7 +239,7 @@ label unfathomable_feeling_day_2:
     "Мику очень торопилась, {w}говоря что ей ещё много надо мне показать. "
     "Я не стал с ней спорить, {w}и уже через пару минут мы были у клуба."
 
-    scene bg int_musclub_sunset
+    scene int_musclub_sunset
 
     play ambience ambience_music_club_day loop fadein 4
     play music music_list["so_good_to_be_careless"] loop fadein 2
@@ -283,7 +283,7 @@ label unfathomable_feeling_day_2:
 
     $ persistent.sprite_time = "day"
 
-    scene bg int_musclub_day
+    scene int_musclub_day
     show mi normal pioneer 
 
     play ambience ambience_music_club_day loop fadein 4
@@ -342,7 +342,7 @@ label unfathomable_feeling_day_2:
     "Я послушал её и через мгновение почувствовал что-то мягкое, {w}дотрагивающееся до моей щеки." 
     "Вдруг в музыкальный клуб зашла девушка с рыжими волосами лет 16."
 
-    scene bg int_musclub_day
+    scene int_musclub_day
 
     show mi normal pioneer at right
     show dv grin pioneer2 at left
@@ -585,7 +585,7 @@ label unfathomable_feeling_day_2:
     window hide
     pause(1.5)
 
-    scene bg ext_storage_day
+    scene ext_storage_day
 
     hide blink
     show unblink
@@ -636,7 +636,7 @@ label unfathomable_feeling_day_2:
 
     "Ужин. Ну что же, стоит подкрепится перед встречей."
 
-    scene bg int_dining_hall_people_sunset
+    scene int_dining_hall_people_sunset
 
     play music music_list["what_do_you_think_of_me"] loop fadein 2
     play ambience ambience_dining_hall_full loop fadein 4
@@ -671,7 +671,7 @@ label unfathomable_feeling_day_2:
     window hide
     pause(1.5)
 
-    scene bg int_dining_hall_people_sunset
+    scene int_dining_hall_people_sunset
 
     show el serious pioneer at right
     show mt normal pioneer at left
@@ -700,7 +700,7 @@ label unfathomable_feeling_day_2:
     window hide
     pause(1.5)
 
-    scene bg int_dining_hall_people_sunset
+    scene int_dining_hall_people_sunset
 
     show ck normal
 
@@ -718,7 +718,7 @@ label unfathomable_feeling_day_2:
     window hide
     pause(1.5)
 
-    scene bg int_dining_hall_people_sunset
+    scene int_dining_hall_people_sunset
 
     show el serious pioneer at right
     show mt normal pioneer at left
@@ -745,7 +745,7 @@ label unfathomable_feeling_day_2:
     window hide
     pause(1.5)
 
-    scene bg ext_boathouse_sunset
+    scene ext_boathouse_sunset
 
     play music music_list["confession_oboe"] loop fadein 2
     play ambience ambience_boat_station_night loop fadein 4
@@ -810,7 +810,7 @@ label unfathomable_feeling_day_2:
     window hide
     pause(1.5)
 
-    scene bg ext_boathouse_night
+    scene ext_boathouse_night
     
     play music music_list["orchid"] loop fadein 2
 
@@ -866,7 +866,7 @@ label unfathomable_feeling_day_2:
     window hide
     pause(1.5)
 
-    scene bg ext_houses_night
+    scene ext_houses_night
 
     play ambience ambience_camp_center_night loop fadein 4
 

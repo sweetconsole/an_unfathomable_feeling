@@ -613,7 +613,7 @@ label unfathomable_feeling_day_1:
     "«Ну да, за один взгляд, за мгновение можно, а за день нельзя. {w}Утешай себя», {w}— он усмехнулся."
     "«Заткнись и не порть момент», {w}— резко ответил я."
 
-    scene bg ext_musclub_day_sunset with fade
+    scene ext_musclub_day_sunset with fade
 
     play music music_list["so_good_to_be_careless"] loop fadein 2
 
@@ -623,7 +623,7 @@ label unfathomable_feeling_day_1:
     window hide
     pause(1.5)
 
-    scene bg int_musclub_sunset
+    scene int_musclub_sunset
 
     play sound sfx_close_door_1
     play ambience ambience_music_club_day loop fadein 4
@@ -697,7 +697,7 @@ label unfathomable_feeling_day_1:
     "« Если это и сон, {w}то я вынесу из него какие-то навыки, {w}всяко лучше чем бродить по лагерю без дела, {w}или что ещё хуже — выполнять поручения вожатой.»"
     "Музыка затихла"
 
-    scene bg int_musclub_sunset
+    scene int_musclub_sunset
 
     show mi normal pioneer with fade
 
@@ -774,7 +774,7 @@ label unfathomable_feeling_day_1:
 
     "Солнце близилось к закату, {w}легкий ветерок дул мне навстречу освежая мои мысли."
 
-    scene bg ext_house_of_un_sunset
+    scene ext_house_of_un_sunset
     show mi normal pioneer
 
     play ambience ambience_ext_road_night loop
