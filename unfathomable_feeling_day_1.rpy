@@ -5,7 +5,7 @@ label unfathomable_feeling_day_1:
     pause(1)
 
     $ backdrop = "days"
-    $ new_chapter(1, u"Первый день")
+    $ new_chapter(1, u"Непостижимое чувство. Первый день")
     $ day_time()
 
     play ambience ambience_ext_road_day loop fadein 4
