@@ -9,6 +9,7 @@ init:
     image ext_houses_night = path_dir + "images/bg/ext_houses_night.jpg"
     image ext_stage_big_sunset = path_dir + "images/bg/ext_stage_big_sunset.jpg"
     image ext_bathhouse_day = path_dir + "images/bg/ext_bathhouse_day.png"
+    image ext_shower_room = path_dir + "images/bg/ext_shower_room.jpg"
 
     image int_musclub_sunset = path_dir + "images/bg/int_music_club_mattresses_sunset.jpg"
     image int_dining_hall_people_sunset = path_dir + "images/bg/int_dining_hall_people_sunset.jpg"

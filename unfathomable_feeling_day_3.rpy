@@ -235,7 +235,7 @@ label unfathomable_feeling_day_3:
     "Мику быстрым шагом направилась в сторону клуба, {w}а я смотрел ей вслед."
     "Солнце, {w}ещё не полностью оторвавшееся от горизонта ослепило меня, {w}а резко подувший прохладный ветер освежил мои мысли."
 
-    scene ext_stage_normal_day with fade
+    scene ext_stage_big_sunset with fade
 
 
     me "Идём в три захода, {w}мы с Шуриком тащим колонки и пульт, {w}а вы несёте небольшие усилители и провода." 
@@ -325,6 +325,8 @@ label unfathomable_feeling_day_3:
     window hide
     pause(1.5)
 
+    $ persistent.sprite_time = "day"
+
     "Дверь резко распахнулась от удара моей ноги и мы зашли внутрь."
 
     scene int_aidpost_day
@@ -369,11 +371,7 @@ label unfathomable_feeling_day_3:
 
     "Вспомнив о том, {w}что колонка осталась одна, {w}я направился к тропинке."
 
-    scene int_aidpost_day
-
-    show sh scared pioneer at right
-    show un scared pioneer at center
-    show cs smile at left
+    scene ext_houses_day
 
     play ambience ambience_camp_center_day loop fadein 4
 
@@ -394,7 +392,7 @@ label unfathomable_feeling_day_3:
     
     show dv grin pioneer2 with fade
 
-    dc "Тебе помочь?"
+    dv "Тебе помочь?"
     "Девушка усмехнулась, {w}заранее зная ответ."
 
     me "Конечно!"
@@ -451,10 +449,14 @@ label unfathomable_feeling_day_3:
 
     "Хотелось ответить что-то резкое, {w}но я просто сказал: \"Неважно\"."
 
+    show dv sad pioneer2 with fade
+
     dv "Ну ладно, {w}мне просто интересно."
     "Алиса немного погрустнела."
 
-    v "Ты это... {w}Береги её. {w}Она немного наивная, {w}и может дел натворить."
+    show dv grin pioneer2
+
+    dv "Ты это... {w}Береги её. {w}Она немного наивная, {w}и может дел натворить."
     "Она резко изменилась и задорно подмигнула мне."
     
     "Диджейский пульт занял законное место на площади, {w}а к нам уже подходила Мику."
@@ -526,8 +528,7 @@ label unfathomable_feeling_day_3:
     window hide
     pause(1.5)
     
-    scene ext_bathhouse_day
-
+    scene ext_shower_room
     play ambience ambience_forest_day loop fadein 4
 
     hide blink
@@ -564,8 +565,8 @@ label unfathomable_feeling_day_3:
     
     scene int_dining_hall_people_day
 
-    show mi normal pioneer 
-    show un normal pioneer
+    show mi normal pioneer at left
+    show un normal pioneer at right
 
     hide blink
     show unblink
@@ -597,6 +598,8 @@ label unfathomable_feeling_day_3:
     
     scene ext_houses_day
 
+    play ambience ambience_camp_center_day loop fadein 4
+
     hide blink
     show unblink
     pause(1.5)
@@ -619,7 +622,9 @@ label unfathomable_feeling_day_3:
     window hide
     pause(3)
     
-    scene int_house_of_dv_night
+    scene int_house_of_mt_night
+
+    play ambience ambience_int_cabin_night loop fadein 4
 
     hide blink
     show unblink
@@ -640,6 +645,8 @@ label unfathomable_feeling_day_3:
     
     scene d3_disco
 
+    play ambience ambience_camp_center_night loop fadein 4
+
     hide blink
     show unblink
     pause(1.5)
@@ -653,8 +660,19 @@ label unfathomable_feeling_day_3:
     "Наконец я увидел её. Мику стояла поодаль от всех, выискивая кого-то в толпе."
     "На ней было прекрасное платье цвета морской волны."
     "Я не удержался от того, чтобы подойти к ней сзади, и закрыть её глаза своими руками."
+
+    show blink
+    window hide
+    pause(1.5)
     
-    show mi smile bluedress with fade
+    scene ext_square_night_party2
+
+    show mi smile bluedress
+
+    hide blink
+    show unblink
+    pause(1.5)
+    window show
 
     mi "Ты пришёл..."
     "С весёлой ноткой в голосе произнесла Мику."
