@@ -12,6 +12,8 @@ init:
     image ext_stage_big_sunset = path_dir + "images/bg/ext_stage_big_sunset.jpg"
     image ext_bathhouse_day = path_dir + "images/bg/ext_bathhouse_day.png"
     image ext_shower_room = path_dir + "images/bg/ext_shower_room.jpg"
+    image ext_house_of_un_night = path_dir + "images/bg/ext_house_of_un_night.jpg"
+    image ext_music_club_night = path_dir + "images/bg/ext_music_club_night.png"
 
     image int_musclub_sunset = path_dir + "images/bg/int_music_club_mattresses_sunset.jpg"
     image int_dining_hall_people_sunset = path_dir + "images/bg/int_dining_hall_people_sunset.jpg"
