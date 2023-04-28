@@ -2,6 +2,8 @@
 init:
     $ path_dir = "mods/an_unfathomable_feeling/"
 
+    $ an_unfathomable_feeling_slow_dance = path_dir + "music/Scorpions_Maybe_I_Maybe_You.ogg"
+
     image ext_musclub_day_sunset = path_dir + "images/bg/ext_music_club_sunset.jpg" 
     image ext_house_of_un_sunset = path_dir + "images/bg/ext_house_of_un_sunset.png"
     image ext_storage_day = path_dir + "images/bg/ext_storage_day.png"
@@ -19,7 +21,7 @@ init:
     image me_mi_piano_musclub = path_dir + "images/cg/me_mi_piano_musclub.jpg"
     image mi_piano_musclub = path_dir + "images/cg/mi_piano_musclub.jpg"
     image me_mirror_normal = path_dir + "images/cg/me_mirror_normal.jpg"
-    image mi_dance = path_dir + "images/cg/mi_dance.png"
+    image me_mi_dance = path_dir + "images/cg/me_mi_dance.png"
 
     # Cook
 

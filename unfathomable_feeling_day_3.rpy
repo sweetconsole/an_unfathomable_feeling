@@ -11,7 +11,7 @@ label unfathomable_feeling_day_3:
 
     pause(1)
 
-    play music music_list["i_want_to_play"] loop fadein 2
+    play music music_list["door_to_nightmare"] loop fadein 2
 
     window show
 
@@ -35,6 +35,7 @@ label unfathomable_feeling_day_3:
 
     scene int_house_of_mt_sunset
 
+    play music music_list["my_daily_life"] loop fadein 2
     play ambience ambience_int_cabin_day loop fadein 4
 
     hide blink
@@ -62,6 +63,8 @@ label unfathomable_feeling_day_3:
 
     scene ext_washstand2_day
 
+    play music music_list["went_fishing_caught_a_girl"] loop fadein 2
+
     hide blink
     show unblink
     pause(1.5)
@@ -76,6 +79,8 @@ label unfathomable_feeling_day_3:
 
     scene ext_house_of_mt_sunset
 
+    play ambience ambience_camp_center_day loop fadein 4
+
     hide blink
     show unblink
     pause(1.5)
@@ -83,6 +88,9 @@ label unfathomable_feeling_day_3:
 
     "Пройдя несколько шагов ватными ногами, {w}я присел на лавочку напротив домика." 
     "Остатки сна тяжелым осадком висели у меня на лице, {w}притягивая его к земле." 
+
+    stop music fadeout 4
+
     "Вокруг меня царила тишина, {w}изредка нарушаемая птицами, {w}которые проснулись раньше других, {w}и утренняя прохлада." 
     "Теплое солнце начало выглядывать с востока, и его лучи бегло скакали по окресностям." 
     "Некоторые пионеры уже встали и направлялись в сторону умывальников, {w}а некоторые шли в сторону столовой." 
@@ -94,6 +102,7 @@ label unfathomable_feeling_day_3:
 
     scene int_dining_hall_people_sunset
 
+    play music music_list["what_do_you_think_of_me"] loop fadein 2
     play ambience ambience_dining_hall_full loop fadein 4
 
     hide blink
@@ -176,6 +185,8 @@ label unfathomable_feeling_day_3:
     window show
 
     "У эстрады нас уже ждал отряд рабочих в лице Алисы, Лены и Шурика."
+    
+    show un shy pioneer at right with fade
 
     me "Доброе утро, {w}дамы." 
     "Я наигранно поклонился, от чего Алиса усмехнулась, {w}а Лена покраснела, и посмотрел в сторону кибернетика и господа."
@@ -198,7 +209,9 @@ label unfathomable_feeling_day_3:
 
     scene ext_stage_big_sunset
 
-    show dv normal pioneer2 at left
+    show dv normal pioneer2:
+        xalign 0
+
     show un normal pioneer at cleft
     show sh normal pioneer at center
 
@@ -237,24 +250,53 @@ label unfathomable_feeling_day_3:
 
     scene ext_stage_big_sunset with fade
 
-
     me "Идём в три захода, {w}мы с Шуриком тащим колонки и пульт, {w}а вы несёте небольшие усилители и провода." 
     me "Выдвигаемся?"
       
-    all "Хорошо"
+    all "Хорошо."
     "Задорно ответили мне ребята."
 
     "Ноша, {w}которую мы несли с Шуриком, была не очень тяжёлой."
     "Солнце полностью вышло из-за горизонта и не щадя палило четверых ребят, {w}которые трудились на благо общества."
     "Перед тем как колонки заняли своё место на площади, {w}нам пришлось сделать две небольших остановки по несколько минут." 
+
+    scene ext_square_day with fade
+    $ persistent.sprite_time = "day"
+    
     "После этого мы разместились на скамейках, {w}что располагались на площади и немного отдохнули." 
     "По лицам моих товарищей по несчастью, {w}я понял что их одолела неподдельная усталось."
-      
+    show blink
+    window hide
+    pause(1.5)
+
+    scene ext_houses_day
+
+    play music music_list["take_me_beautifully"] loop fadein 2
+
+    hide blink
+    show unblink
+    pause(1.5)
+    window show
+    
+
     "Путь назад был очень долгим, {w}ребята специально растягивали этот момент." 
     "От нечего делать я рассматривал тропинку по которой мы шли."
     "Она была в основном песчаной, {w}с редкими корнями, но иногда проскакивала каменная плитка." 
     "Когда мы дошли, {w}солнце уже палило вовсю, что даже редкие порывы прохладного ветерочка не могли освежить достаточно."
-      
+    
+    show blink
+    window hide
+    pause(1.5)
+
+    show dv normal pioneer2 at center
+    show un normal pioneer at right
+    show sh normal pioneer at left
+
+    hide blink
+    show unblink
+    pause(1.5)
+    window show
+
     sh "Есть водичка у кого-нибудь?"
     "Не выдержал Шурик."
 
@@ -280,6 +322,8 @@ label unfathomable_feeling_day_3:
     "Светило даже не думало сдавать свои позиции и активно испепеляло нас."
     
     show dv smile pioneer2 with fade
+    
+    play music music_list["i_want_to_play"] loop fadein 2
 
     dv "Чего сидим?"
     "Я нехотя повернулся в сторону, {w}откуда исходил звук. {w}Источником сего была Алиса." 
@@ -302,6 +346,8 @@ label unfathomable_feeling_day_3:
     "Колонка снова оказалась над землёй и мы потащили её в сторону площади." 
     "Мой взгляд привлекали немногочисленные корешки, {w}просачивающиеся сквозь песчаную дорожку."
     
+    play music music_list["doomed_to_be_defeated"] loop fadein 2
+
     "Вдруг Шурик неаккуратно ступил, споткнулся об один из таких и полетел вниз, {w}попутно притягивая за собой колонку." 
     "Удар кибернетика о землю, {w}удар колонки о кибернетика, всё произошло за мгновения, но мой мозг плотно спрессовал это в памяти."
       
@@ -325,8 +371,6 @@ label unfathomable_feeling_day_3:
     window hide
     pause(1.5)
 
-    $ persistent.sprite_time = "day"
-
     "Дверь резко распахнулась от удара моей ноги и мы зашли внутрь."
 
     scene int_aidpost_day
@@ -335,6 +379,7 @@ label unfathomable_feeling_day_3:
     show un scared pioneer at center
     show cs smile at left
 
+    play music music_list["you_won_t_let_me_down"] loop fadein 2
     play ambience ambience_medstation_inside_day loop fadein 4
 
     hide blink
@@ -349,6 +394,7 @@ label unfathomable_feeling_day_3:
     "Выпалил я."
     
     show cs normal with fade
+    play music music_list["awakening_power"] loop fadein 2
 
     cs "Что!? {w}Срочно кладите его на кушетку!"
     "Виола оживилась и обернулась к нам."
@@ -368,6 +414,8 @@ label unfathomable_feeling_day_3:
     show blink
     window hide
     pause(1.5)
+
+    play music music_list["reminiscences"] loop fadein 2
 
     "Вспомнив о том, {w}что колонка осталась одна, {w}я направился к тропинке."
 
@@ -416,6 +464,8 @@ label unfathomable_feeling_day_3:
     me "А чего же ты тогда просто не ушла?"
     "Спросил я, {w}оборачиваясь."
     
+    show shy pioneer2 with fade
+
     dv "Я не хотела подвести Мику, {w}она меня столько раз выручала с гитарой, {w}что даже стыдно."
     "Она немного покраснела. {w}Или мне показалось?"
     
@@ -429,6 +479,7 @@ label unfathomable_feeling_day_3:
 
     show dv grin pioneer2
 
+    play music music_list["sweet_darkness"] loop fadein 2
     play ambience ambience_camp_center_day loop fadein 4
 
     hide blink
@@ -529,6 +580,8 @@ label unfathomable_feeling_day_3:
     pause(1.5)
     
     scene ext_shower_room
+
+    play music music_list["farewell_to_the_past_full"] loop fadein 2
     play ambience ambience_forest_day loop fadein 4
 
     hide blink
@@ -550,6 +603,7 @@ label unfathomable_feeling_day_3:
     
     scene int_dining_hall_people_day
 
+    play music music_list["what_do_you_think_of_me"] loop fadein 2
     play ambience ambience_dining_hall_full loop fadein 4
 
     hide blink
@@ -598,6 +652,7 @@ label unfathomable_feeling_day_3:
     
     scene ext_houses_day
 
+    play music music_list["i_want_to_play"] loop fadein 2
     play ambience ambience_camp_center_day loop fadein 4
 
     hide blink
@@ -622,8 +677,11 @@ label unfathomable_feeling_day_3:
     window hide
     pause(3)
     
+    $ persistent.sprite_time = "night"
+
     scene int_house_of_mt_night
 
+    play music music_list["lets_be_friends"] loop fadein 2
     play ambience ambience_int_cabin_night loop fadein 4
 
     hide blink
@@ -645,6 +703,7 @@ label unfathomable_feeling_day_3:
     
     scene d3_disco
 
+    play music music_list["confession_oboe"] loop fadein 2
     play ambience ambience_camp_center_night loop fadein 4
 
     hide blink
@@ -654,6 +713,18 @@ label unfathomable_feeling_day_3:
 
     "На площади играла весёлая и задорная музыка."
     "Некоторые пионеры, в основном из младших отрядов, танцевали в толпе, некоторые скучали на лавочках, ожидая приглашения, но сейчас они волновали меня меньше всего: я выискивал два аквамариновых хвоста, ставших за эти три дня такими родными." 
+    
+    show blink
+    window hide
+    pause(1.5)
+    
+    scene ext_square_night_party
+
+    hide blink
+    show unblink
+    pause(1.5)
+    window show
+    
     "Я прошёл вдоль площади, посмотрев на деятеля, вылитого из бронзы."
     "Он всё так же непоколебимо стоял, прикладывая ладонь к лицу."
 
@@ -661,18 +732,7 @@ label unfathomable_feeling_day_3:
     "На ней было прекрасное платье цвета морской волны."
     "Я не удержался от того, чтобы подойти к ней сзади, и закрыть её глаза своими руками."
 
-    show blink
-    window hide
-    pause(1.5)
-    
-    scene ext_square_night_party2
-
-    show mi smile bluedress
-
-    hide blink
-    show unblink
-    pause(1.5)
-    window show
+    show mi smile bluedress with fade
 
     mi "Ты пришёл..."
     "С весёлой ноткой в голосе произнесла Мику."
@@ -684,7 +744,9 @@ label unfathomable_feeling_day_3:
     window hide
     pause(1.5)
     
-    scene mi_dance
+    scene me_mi_dance
+
+    play music an_unfathomable_feeling_slow_dance fadein 2
 
     hide blink
     show unblink
@@ -702,3 +764,77 @@ label unfathomable_feeling_day_3:
     
     "Краем глаза я заметил, как один из пионеров махнул рукой и пригласил Славю на танец."
     "Уже две пары кружились у всех на глазах. Площадь стала медленно заполняться новыми желающими."
+
+    "Мику была небольшого роста, поэтому ей приходилось немного поднимать голову, что бы смотреть мне в глаза." 
+    "Я смотрел на неё и понимал, сколько я потерял в своей жизни. И сколько я обрёл в этом лагере." 
+    "Её аквамариновые глаза были полны счастья и удволетворения, и я улыбнулся, глядя в них."
+    
+    me "Мику, я готов остаться здесь навечно, лишь бы быть рядом с тобой."
+    "Сказал я искренне."
+
+    mi "Не говори глупостей..."
+    "Прошептала Мику и улыбнулась."
+    
+    "Дальнейший танец прошёл без разговоров." 
+    "За спиной девушки мелькало уже много пионеров, многие пары были образованы двумя девушками." 
+    "Но всё это было абсолютно неважно сейчас, самым ценным для меня в этот момент была моя спутница." 
+    "Единственно важным для меня была теплота и мягкость её рук, прерывистость дыхания."
+    
+    "Мику. Такая хрупкая, такая живая, любимая. Моя. Мы оба просто наслаждались этим моментом, и растягивали его так как могли." 
+    "Но как и всему хорошему, этому танцу уже был вынесен приговор." 
+    "Ведь ничто никогда не сможет продолжаться вечно. Наши руки нехотя разомкнулись, и мы отстранились друг от друга."
+    
+    mi "Я и не знала что ты умеешь так хорошо танцевать."
+    "Произнесла Мику, не прекращая смотреть мне в глаза."
+    
+    me "Я и сам не знал, это всё благодаря тебе."
+    "Признался я."
+
+    show blink
+    window hide
+    pause(1.5)
+    
+    scene d3_disco
+
+    play ambience ambience_camp_center_night loop fadein 4
+
+    hide blink
+    show unblink
+    pause(1.5)
+    window show
+
+    "Музыка вновь стала быстрой и весёлой, будто вернувшись в сознание после недолгого забвения." 
+    "Мы с Мику выбрали лавочку и наблюдали за танцующими. Вон Ульянка танцует с кем-то из младших отрядов." 
+    "Вот Славя ритмично пляшет под музыку. Даже Электроник не остался без дела." 
+    "Хотя его движения лишь отдалённо можно было назвать танцем, он старался не отставать от других."
+    
+    "Прошло около пятнадцати минут, и музыка, наконец, сменилась. Я встал и потянул Мику за собой." 
+    "Она заметно устала, да я и не хотел ничего кроме ещё одного, последнего танца." 
+    "Этот танец прошёл в том же напряжении, но в этот раз несколько пар сразу вышли вместе с нами." 
+    "Танец нисколько не изменился, и вести уже начал я. Я и сам не заметил, как расстояние между нами заметно уменьшилось."
+    
+    mi "Семён, я всё понимаю, но чуть дальше."
+    "Попросила Мику."
+      
+    "Я усмехнулся и крепко прижал её к себе. В ответ она лишь вздрогнула и положила свою голову мне на плечо."
+    "Я чувствовал её тепло, её размеренное дыхание у меня на спине и от этого становилось так спокойно на душе, так хорошо." 
+    "В миг забывались все проблемы, и хотелось лишь продолжать танец." 
+    "Я запустил руку в один из её аквамариновых хвостов и принялся поглаживать её спину." 
+    "Она только мурлыкнула у меня на плече."
+    
+    "Я понял, что Мику сильно устала, и не хотел продолжать пытать её." 
+    "По окончании танца я усадил её на скамейку и задал вопрос, ответ на который знал уже заранее."
+    
+    me "Ты устала? Я могу проводить тебя до домика."
+    
+    mi "Если тебе не сложно."
+    "Улыбнулась она."
+
+    Мы неспеша шли по ночному лагерю, наслаждаясь прохладой. 
+    Как хорошо, что наши домики так близко друг к другу, и так жаль, что они так близко к площади. 
+    Путь не занял у нас много времени, и мы остановились у домика Мику.
+    
+    Спокойной ночи, Семён, – она повернулась ко мне и снова посмотрела в глаза
+    И спасибо за танцы.
+    
+    Я почувствовал теплоту её губ на своей щеке и она скрылась в домике.
