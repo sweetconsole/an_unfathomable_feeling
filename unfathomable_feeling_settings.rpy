@@ -14,9 +14,9 @@ init:
     image ext_shower_room = path_dir + "images/bg/ext_shower_room.jpg"
     image ext_house_of_un_night = path_dir + "images/bg/ext_house_of_un_night.jpg"
     image ext_music_club_night = path_dir + "images/bg/ext_music_club_night.png"
-    image ext_house_male_day = path = "images/bg/ext_house_male_day.jpg"
-    image ext_house_male_sunset = path = "images/bg/ext_house_male_sunset.jpg"
-    image ext_house_male_night = path = "images/bg/ext_house_male_night.jpg"
+    image ext_house_male_day = path_dir + "images/bg/ext_house_male_day.jpg"
+    image ext_house_male_sunset = path_dir + "images/bg/ext_house_male_sunset.jpg"
+    image ext_house_male_night = path_dir + "images/bg/ext_house_male_night.jpg"
 
     image int_bus_rain_sunset = path_dir + "images/bg/int_bus_rain_sunset.jpg"
     image int_musclub_sunset = path_dir + "images/bg/int_music_club_mattresses_sunset.jpg"

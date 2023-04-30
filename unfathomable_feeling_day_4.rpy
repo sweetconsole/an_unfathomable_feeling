@@ -921,7 +921,7 @@ label unfathomable_feeling_day_4:
     
     me "Если мне не изменяла память, {w}тот тут есть выход за Гендой."
 
-    scene int_mine_exit_night_light	with fade 
+    scene int_mine_exit_night_light with fade
 
     "Я пошёл в сторону неприметной двери, {w}открыл её и залез на лестницу."
     "Парой точных движений я выбил шурупы, {w}стоявшие между мной и свободой, и позвал ребят."
