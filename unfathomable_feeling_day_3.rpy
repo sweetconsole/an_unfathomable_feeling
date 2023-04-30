@@ -7,8 +7,7 @@ label unfathomable_feeling_day_3:
     $ backdrop = "days"
     $ new_chapter(3, u"Непостижимое чувство. Третий  день")
     $ persistent.sprite_time = "sunset"
-    $ sunset_time()
-    $ day_time()
+    $ night_time()
 
     pause(1)
 
@@ -34,7 +33,9 @@ label unfathomable_feeling_day_3:
     window hide
     pause(1.5)
 
-    scene int_house_male_sunset
+    $ sunset_time()
+
+    scene int_house_male_day
 
     play music music_list["my_daily_life"] loop fadein 2
     play ambience ambience_int_cabin_day loop fadein 4
@@ -290,6 +291,8 @@ label unfathomable_feeling_day_3:
     window hide
     pause(1.5)
 
+    scene ext_houses_day
+
     show dv normal pioneer2 at center
     show un normal pioneer at right
     show sh normal pioneer at left
@@ -343,7 +346,7 @@ label unfathomable_feeling_day_3:
     me "Спасибо!"
     "Произнёс я исчезающему силуэту."
     
-    hide dv smile pioneer2 with fade
+    hide dv smile pioneer2 with dissolve
 
     "Колонка снова оказалась над землёй и мы потащили её в сторону площади." 
     "Мой взгляд привлекали немногочисленные корешки, {w}просачивающиеся сквозь песчаную дорожку."
@@ -676,7 +679,7 @@ label unfathomable_feeling_day_3:
     "Да и сейчас я не очень-то хотел идти на них, {w}но у меня была мотивация – там будет Мику." 
     "И у меня с ней целых два танца. {w}А то и больше!"
 
-    scene ext_house_of_mt_day with fade
+    scene ext_house_male_day with fade
 
     "Я подошёл к своему домику. {w}Набратся сил сейчас не было лишним." 
 
@@ -705,7 +708,7 @@ label unfathomable_feeling_day_3:
     "Когда очередной сон подходил к концу, я вернулся в сознание. {w}Я быстро вскочил, {w}надел на себя рубашку и посмотрел на часы." 
     "Ужин проспан, {w}а танцы уже 10 минут как начались. Сон сняло как рукой." 
 
-    scene ext_house_of_mt_night with fade
+    scene int_house_male_nightа with fade
 
     "Галстук полетел на кровать, {w}а я вылетел из домика, благо он был совсем рядом с площадью."
     
@@ -935,7 +938,7 @@ label unfathomable_feeling_day_3:
     "Последнее слово далось мне с трудом, {w}и ногти пальцев вцепились мне в ладонь."
 
     pi "Оу, странный вопрос для начала, но я поясню. {w}Называй их как хочешь."
-    "Декорациями, задним планом, куклами. {w}Они повторяют свои действия каждый раз, каждый новый цикл."
+    pi "Декорациями, задним планом, куклами. {w}Они повторяют свои действия каждый раз, каждый новый цикл."
 
     me "Про какие циклы ты говоришь? {w}Ты что, несколько раз был тут?"
     "Я удивился."

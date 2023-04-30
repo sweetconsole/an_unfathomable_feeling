@@ -25,7 +25,7 @@ label unfathomable_feeling_day_2:
     "Кто-то хихикнул надо мной."
     "После нескольких неудачных попыток отмахнуться, {w}я не придумал ничего лучше, {w}чем открыть уставшие глаза."
 
-    show int_house_male_sunset
+    show int_house_male_day
     show mi happy pioneer 
 
     hide blink
@@ -883,6 +883,9 @@ label unfathomable_feeling_day_2:
     play music music_list["your_bright_side"] loop fadein 2
 
     "Путь домой я провёл в размышлениях о странном пионере, {w}который испортил мне вечер."
+
+    scene int_house_male_night with fade
+
     "Зайдя домой, {w}я понял что был тут всего два раза за день: {w}утром, когда просыпался, {w}и сейчас."
     "Мне оставалось только быстро развесить свои вещи на соседнюю кровать и лечь спать."
 
