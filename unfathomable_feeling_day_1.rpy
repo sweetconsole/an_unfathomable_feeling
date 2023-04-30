@@ -6,6 +6,7 @@ label unfathomable_feeling_day_1:
 
     $ backdrop = "days"
     $ new_chapter(1, u"Непостижимое чувство. Первый день")
+    $ persistent.sprite_time = "day"
     $ day_time()
 
     play ambience ambience_ext_road_day loop fadein 4
@@ -41,8 +42,6 @@ label unfathomable_feeling_day_1:
     show blink
     window hide
     pause(1.5)
-
-    $ persistent.sprite_time = "day"
 
     scene ext_bus
 
@@ -601,6 +600,7 @@ label unfathomable_feeling_day_1:
     scene ext_houses_sunset with fade
 
     $ persistent.sprite_time = "sunset"
+    $ sunset_time()
 
     play music music_list["forest_maiden"] loop fadein 2
 
@@ -761,7 +761,7 @@ label unfathomable_feeling_day_1:
 
     mt "Итак, вот твоя форма."
     "Она протянула мне пакет."
-    mt "Там же умывальные принадлежности и ключ от моего домика. {w}Ты будешь жить со мной."
+    mt "Там же умывальные принадлежности и ключ от 53 домика. Ты будешь жить один, благо незанятые домики у нас ещё остались."
     mt "Можешь прогуляться перед сном. {w}Отбой в 10."
 
     me "Хорошо. {w}Сладких снов."
@@ -775,6 +775,7 @@ label unfathomable_feeling_day_1:
     "Солнце близилось к закату, {w}легкий ветерок дул мне навстречу освежая мои мысли."
 
     scene ext_house_of_un_sunset
+    
     show mi normal pioneer
 
     play ambience ambience_ext_road_night loop

@@ -95,7 +95,7 @@ label unfathomable_feeling_prologue:
     hide blink
     show unblink
 
-    play audio sfx_bus_stop
+    play sound sfx_ikarus_arrive
     hide bg bus_stop
     show anim intro_10 with fade
 
@@ -103,6 +103,11 @@ label unfathomable_feeling_prologue:
 
     "Я поднял голову и понял, {w}что передо мной самый настоящий ЛиАЗ {w}с номером «410»"
     "~ Какого чёрта? {w}Разве они ещё разъезжают в такое время? ~"
+    
+    scene anim intro_11 with fade
+
+    play sound sfx_ikarus_open_doors
+    
     "Да и странный его вид меня немного смутил. {w}Но все аргументы «против» были сломлены порывом ветра, {w}продувающим меня насквозь. {w}«Проеду кружок, а потом и домой пойду», {w}— с этой мыслью я сел в автобус."
 
     stop ambience

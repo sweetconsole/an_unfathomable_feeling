@@ -7,6 +7,7 @@ label unfathomable_feeling_day_3:
     $ backdrop = "days"
     $ new_chapter(3, u"Непостижимое чувство. Третий  день")
     $ persistent.sprite_time = "sunset"
+    $ sunset_time()
     $ day_time()
 
     pause(1)
@@ -17,7 +18,7 @@ label unfathomable_feeling_day_3:
 
     "Я просыпался несколько раз за ночь."
 
-    scene int_house_of_mt_night2 with fade
+    scene int_house_male_night with fade
 
     play ambience ambience_int_cabin_night loop fadein 4
 
@@ -33,7 +34,7 @@ label unfathomable_feeling_day_3:
     window hide
     pause(1.5)
 
-    scene int_house_of_mt_sunset
+    scene int_house_male_sunset
 
     play music music_list["my_daily_life"] loop fadein 2
     play ambience ambience_int_cabin_day loop fadein 4
@@ -262,6 +263,7 @@ label unfathomable_feeling_day_3:
 
     scene ext_square_day with fade
     $ persistent.sprite_time = "day"
+    $ day_time()
     
     "После этого мы разместились на скамейках, {w}что располагались на площади и немного отдохнули." 
     "По лицам моих товарищей по несчастью, {w}я понял что их одолела неподдельная усталось."
@@ -543,6 +545,15 @@ label unfathomable_feeling_day_3:
 
     "Пот из моей одежды можно было выжимать ведрами, {w}и я направился к Ольге Дмитриевне, {w}что бы узнать о душевых или бане." 
     
+    scene ext_house_of_mt_day with fade
+
+    play sound sfx_knock_door2
+
+    "Стук в дверь."
+
+    mt "Войдите."
+    "Донеслось из домика."
+
     show blink
     window hide
     pause(1.5)
@@ -669,7 +680,7 @@ label unfathomable_feeling_day_3:
 
     "Я подошёл к своему домику. {w}Набратся сил сейчас не было лишним." 
 
-    scene int_house_of_mt_day with fade
+    scene int_house_male_day with fade
 
     "Моё тело сковывала накопившаяся усталость, {w}и я заснул ровно в тот момент, {w}когда моя голова коснулась подушки."
 
@@ -678,8 +689,9 @@ label unfathomable_feeling_day_3:
     pause(3)
     
     $ persistent.sprite_time = "night"
+    $ night_time()
 
-    scene int_house_of_mt_night
+    scene int_house_male_night
 
     play music music_list["lets_be_friends"] loop fadein 2
     play ambience ambience_int_cabin_night loop fadein 4
@@ -949,3 +961,5 @@ label unfathomable_feeling_day_3:
     "Но так не хотелось признавать его правоту, {w}ведь тогда Мику – тоже декорация." 
     "Силы закончились и я был физически и морально истощён." 
     "Я не мог даже дойти до домика. {w}Я просто лёг на траву и заснул..."
+
+    jump unfathomable_feeling_day_4

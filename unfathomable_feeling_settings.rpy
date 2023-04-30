@@ -17,6 +17,9 @@ init:
 
     image int_musclub_sunset = path_dir + "images/bg/int_music_club_mattresses_sunset.jpg"
     image int_dining_hall_people_sunset = path_dir + "images/bg/int_dining_hall_people_sunset.jpg"
+    image int_house_male_day = path_dir + "images/bg/int_house_male_day.jpg"
+    image int_house_male_sunset = path_dir + "images/bg/int_house_male_sunset.jpg"
+    image int_house_male_night = path_dir + "images/bg/int_house_male_night.jpg"
 
     image day2_breakfast = path_dir + "images/cg/day2_breakfast.jpg"
     image me_mi_guitar_musclub = path_dir + "images/cg/me_mi_guitar_musclub.jpg"
@@ -24,6 +27,9 @@ init:
     image mi_piano_musclub = path_dir + "images/cg/mi_piano_musclub.jpg"
     image me_mirror_normal = path_dir + "images/cg/me_mirror_normal.jpg"
     image me_mi_dance = path_dir + "images/cg/me_mi_dance.png"
+    image un_crazy_blood = path_dir + "images/cg/un_crazy_blood.jpg"
+    image un_crazy_torch = path_dir + "images/cg/un_crazy_torch.jpg"
+    image daytime_sky = path_dir + "images/cg/daytime_sky.jpg"
 
     # Cook
 

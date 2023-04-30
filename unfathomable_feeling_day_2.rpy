@@ -7,7 +7,7 @@ label unfathomable_feeling_day_2:
     $ backdrop = "days"
     $ new_chapter(2, u"Непостижимое чувство. Второй день")
     $ persistent.sprite_time = "sunset"
-    $ day_time()
+    $ sunset_time()
 
     pause(1)
 
@@ -25,7 +25,7 @@ label unfathomable_feeling_day_2:
     "Кто-то хихикнул надо мной."
     "После нескольких неудачных попыток отмахнуться, {w}я не придумал ничего лучше, {w}чем открыть уставшие глаза."
 
-    show int_house_of_mt_sunset
+    show int_house_male_sunset
     show mi happy pioneer 
 
     hide blink
@@ -73,8 +73,6 @@ label unfathomable_feeling_day_2:
     window hide
     pause(1.5)
 
-    $ persistent.sprite_time = "sunset"
-
     "Вместе с Мику мы пошли к умывальникам."
 
     scene ext_washstand2_day
@@ -85,6 +83,8 @@ label unfathomable_feeling_day_2:
     show unblink
     pause(1.5)
     window show
+
+    play sound sfx_open_water_sink
 
     "Я быстро кинул горсть ледяной воды себе в лицо, {w}но не рассчитал порцию."
 
@@ -282,6 +282,7 @@ label unfathomable_feeling_day_2:
     pause(1.5)
 
     $ persistent.sprite_time = "day"
+    $ day_time()
 
     scene int_musclub_day
     show mi normal pioneer 
@@ -396,7 +397,7 @@ label unfathomable_feeling_day_2:
 
     "Оставаться с ней не хотелось совсем."
 
-    scene int_house_of_mt_day
+    scene int_house_male_day
 
     play ambience ambience_day_countryside_ambience
 
@@ -633,6 +634,7 @@ label unfathomable_feeling_day_2:
     pause(1.5)
 
     $ persistent.sprite_time = "sunset"
+    $ sunset_time()
 
     "Ужин. Ну что же, стоит подкрепится перед встречей."
 
@@ -729,12 +731,12 @@ label unfathomable_feeling_day_2:
     window show
     
     el "И Семён будет с нами!"
-    "Блондин указал на место, где я стоял пару секунд назад."
+    "Блондин указал на место, {w}где я стоял пару секунд назад."
 
     mt "Там никого нет."
     "Констатировала вожатая."
 
-    el "Я сейчас его найду, он не будет против."
+    el "Я сейчас его найду, {w}он не будет против."
     "Электроник пошёл в мою сторону."
 
     "Ситуация ухудшалась: {w}мне приходилось пробираться в полуприсяде через столы вдоль стенки." 
@@ -809,6 +811,9 @@ label unfathomable_feeling_day_2:
     show blink
     window hide
     pause(1.5)
+
+    $ persistent.sprite_time = "night"
+    $ night_time()
 
     scene ext_boathouse_night
     
