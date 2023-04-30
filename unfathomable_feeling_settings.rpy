@@ -3,6 +3,7 @@ init:
     $ path_dir = "mods/an_unfathomable_feeling/"
 
     $ an_unfathomable_feeling_slow_dance = path_dir + "music/Scorpions_Maybe_I_Maybe_You.ogg"
+    $ an_unfathomable_feeling_sfx_jump_into_hole = path_dir + "sounds/sfx_jump_into_hole.ogg"
 
     image ext_musclub_day_sunset = path_dir + "images/bg/ext_music_club_sunset.jpg" 
     image ext_house_of_un_sunset = path_dir + "images/bg/ext_house_of_un_sunset.png"
@@ -24,13 +25,15 @@ init:
     image int_house_male_day = path_dir + "images/bg/int_house_male_day.jpg"
     image int_house_male_sunset = path_dir + "images/bg/int_house_male_sunset.jpg"
     image int_house_male_night = path_dir + "images/bg/int_house_male_night.jpg"
+    image int_dva_dish_sunset = path_dir + "images/bg/int_dva_dish_sunset"
+    image int_old_building_hatch = path_dir + "images/bg/int_old_building_hatch.jpg"
 
     image day2_breakfast = path_dir + "images/cg/day2_breakfast.jpg"
     image day4_catac_mi = path_dir + "images/cg/da4_catac_mi.jpg"
     image day4_sh_sit = path_dir + "images/cg/day4_sh_sit.jpg"
     image me_mi_guitar_musclub = path_dir + "images/cg/me_mi_guitar_musclub.jpg"
     image me_mi_piano_musclub = path_dir + "images/cg/me_mi_piano_musclub.jpg"
-    image mi_piano_musclub = path_dir + "images/cg/mi_piano_musclub.jpg"
+    image mi_piano_musclub = path_dir + "images/cg/mi_piano_musclub.png"
     image me_mirror_normal = path_dir + "images/cg/me_mirror_normal.jpg"
     image me_mi_dance = path_dir + "images/cg/me_mi_dance.png"
     image un_crazy_blood = path_dir + "images/cg/un_crazy_blood.jpg"

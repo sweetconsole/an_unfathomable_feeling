@@ -142,7 +142,7 @@ label unfathomable_feeling_day_3:
     "Я продолжил ковырять кашу."
     me "Что случилось?"
     
-    show mi grin pioneer with fade
+    show mi grin pioneer with dspr
 
     mi "Сегодня вечером будут танцы. {w}Поможешь?"
     "Девушка игриво улыбнулась."
@@ -150,7 +150,7 @@ label unfathomable_feeling_day_3:
     me "Конечно. {w}Но я требую платы."
     "Я хитро улыбнулся."
     
-    show mi shy pioneer with fade
+    show mi shy pioneer with dspr
 
     mi "И чего же ты хочешь?"
     "Мику немного смутилась."
@@ -158,7 +158,7 @@ label unfathomable_feeling_day_3:
     me "С тебя танец!"
     "Заключил я."
     
-    show mi grin pioneer with fade
+    show mi grin pioneer with dspr
 
     mi "Поможешь перенести колонки, {w}получишь два!"
     "Она задорно посмотрела мне в глаза."
@@ -188,7 +188,7 @@ label unfathomable_feeling_day_3:
 
     "У эстрады нас уже ждал отряд рабочих в лице Алисы, Лены и Шурика."
     
-    show un shy pioneer at right with fade
+    show un shy pioneer at right with dspr
 
     me "Доброе утро, {w}дамы." 
     "Я наигранно поклонился, от чего Алиса усмехнулась, {w}а Лена покраснела, и посмотрел в сторону кибернетика и господа."
@@ -216,7 +216,6 @@ label unfathomable_feeling_day_3:
 
     show un normal pioneer at cleft
     show sh normal pioneer at center
-
     show mi normal pioneer at right
 
     hide blink
@@ -268,6 +267,7 @@ label unfathomable_feeling_day_3:
     
     "После этого мы разместились на скамейках, {w}что располагались на площади и немного отдохнули." 
     "По лицам моих товарищей по несчастью, {w}я понял что их одолела неподдельная усталось."
+    
     show blink
     window hide
     pause(1.5)
@@ -398,7 +398,7 @@ label unfathomable_feeling_day_3:
     me "Это мы, {w}тут на Шурика колонка упала, у него нога болит. {w}Наверное сломана." 
     "Выпалил я."
     
-    show cs normal with fade
+    show cs normal with dspr
     play music music_list["awakening_power"] loop fadein 2
 
     cs "Что!? {w}Срочно кладите его на кушетку!"
@@ -443,7 +443,7 @@ label unfathomable_feeling_day_3:
     me "Да вот. {w}Шурик в медпункте с Леной, {w}оставили меня одного, а до полудня остался лишь час."
     "Я повернулся к Алиса."
     
-    show dv grin pioneer2 with fade
+    show dv grin pioneer2 with dspr
 
     dv "Тебе помочь?"
     "Девушка усмехнулась, {w}заранее зная ответ."
@@ -454,7 +454,7 @@ label unfathomable_feeling_day_3:
     "Спустя секунду Алиса подскочила ко мне и мы вдвоём повернули колонку на ножки." 
     "До площади оставалось метров 200 и я с Алисой принялись тащить усилитель туда."
 
-    show dv normal pioneer2 with fade
+    show dv normal pioneer2 with dspr
 
     dv "Семён, {w}а почему ты вчера в карты не играл?"
     "Алиса вопросительно посмотрела на меня."
@@ -469,7 +469,7 @@ label unfathomable_feeling_day_3:
     me "А чего же ты тогда просто не ушла?"
     "Спросил я, {w}оборачиваясь."
     
-    show dv shy pioneer2 with fade
+    show dv shy pioneer2 with dspr
 
     dv "Я не хотела подвести Мику, {w}она меня столько раз выручала с гитарой, {w}что даже стыдно."
     "Она немного покраснела. {w}Или мне показалось?"
@@ -505,12 +505,12 @@ label unfathomable_feeling_day_3:
 
     "Хотелось ответить что-то резкое, {w}но я просто сказал: \"Неважно\"."
 
-    show dv sad pioneer2 with fade
+    show dv sad pioneer2 with dspr
 
     dv "Ну ладно, {w}мне просто интересно."
     "Алиса немного погрустнела."
 
-    show dv grin pioneer2
+    show dv grin pioneer2 with dspr
 
     dv "Ты это... {w}Береги её. {w}Она немного наивная, {w}и может дел натворить."
     "Она резко изменилась и задорно подмигнула мне."
@@ -581,7 +581,7 @@ label unfathomable_feeling_day_3:
     mt "Душевые кабинки у умывальников, дальше по дорожке."
     mt "А ещё у нас есть баня, она находится чуть дальше библиотеки" 
 
-    show mt smile pioneer with fade
+    show mt smile pioneer with dspr
 
     mt "За работу спасибо, {w}можешь отдохнуть до вечера."
     "Она легко улыбнулась и продолжила читать книгу, которую отложила на несколько секунд."
@@ -857,7 +857,7 @@ label unfathomable_feeling_day_3:
     
     me "Ты устала? {w}Я могу проводить тебя до домика."
     
-    show mi smile bluedress with fade
+    show mi smile bluedress with dspr
 
     mi "Если тебе не сложно."
     "Улыбнулась она."
@@ -922,7 +922,7 @@ label unfathomable_feeling_day_3:
     me "Что тебе нужно?"
     "Прошипел я."
     
-    show pi normal with fade
+    show pi normal with dspr
 
     pi "Мы в прошлый раз не слишком хорошо попрощались."
     "Улыбка ушла с его лица."
@@ -943,7 +943,7 @@ label unfathomable_feeling_day_3:
     me "Про какие циклы ты говоришь? {w}Ты что, несколько раз был тут?"
     "Я удивился."
 
-    show pi smile with fade
+    show pi smile with dspr
 
     pi "Конечно, да и ты тоже! {w}Дай я тебе кое-что покажу."
     "Он улыбнулся."

@@ -9,8 +9,9 @@ label unfathomable_feeling_day_4:
     $ persistent.sprite_time = "day"
     $ night_time()
     $ day_time()
-
-    play ambience ambience_forest_night
+    
+    play music music_list["orchid"] loop fadein 2
+    play ambience ambience_catacombs loop fadein 4
 
     window show
 
@@ -132,7 +133,8 @@ label unfathomable_feeling_day_4:
 
     scene daytime_sky  
 
-    play ambience ambience_camp_entrance_day
+    play music music_list["goodbye_home_shores"] loop fadein 2
+    play ambience ambience_camp_entrance_day loop fadein 4
 
     hide blink
     show unblink
@@ -190,7 +192,7 @@ label unfathomable_feeling_day_4:
 
     "Живот предательски заурчал."
     
-    show mi happy pioneer with fade
+    show mi happy pioneer with dspr
 
     mi "А ты уверен в этом?"
     "Она усмехнулась и тряхнула пакетик в своей руке."
@@ -202,7 +204,7 @@ label unfathomable_feeling_day_4:
     
     me "Ладно... Пошли уже."
 
-    show mi grin pioneer with fade
+    show mi grin pioneer with dspr
 
     "Я сделал вид что обиделся. Судя по тому, что девушка засмеялась, вышло неубедительно."
 
@@ -213,6 +215,8 @@ label unfathomable_feeling_day_4:
     scene int_musclub_day
 
     play sound sfx_lock_open
+
+    play music music_list["so_good_to_be_careless"] loop fadein 2
     play ambience ambience_music_club_day
 
     hide blink
@@ -249,6 +253,8 @@ label unfathomable_feeling_day_4:
     "Отчеканил я, {w}после чего взял инструмент из рук Мику."
     
     scene me_mi_guitar_musclub with fade
+
+    play music music_list["miku_song_flute"] loop fadein 2
 
     "Мы просидели так до обеда. {w}Мику научила меня парочке новых аккордов и мелодий, а моя игра на гитаре сопровождалась ангельским пением девушки." 
     "Такие моменты хочется растянуть надолго. Они позволяют тебе собраться с мыслями, отвлечься от всех проблем, и побыть с тем, кто тебе дорог."
@@ -295,8 +301,9 @@ label unfathomable_feeling_day_4:
     window hide
     pause(1.5)
 
-    scene int_dining_hall_people_day
+    scene int_dva_dish_sunset
 
+    play music music_list["eat_some_trouble"] loop fadein 2
     play ambience ambience_dining_hall_full loop fadein 4
 
     hide blink
@@ -311,7 +318,7 @@ label unfathomable_feeling_day_4:
     window hide
     pause(1.5)
 
-    scene int_dining_hall_people_day
+    scene int_dva_dish_sunset
 
     show mi normal pioneer at left
     show mt normal pioneer at center
@@ -386,6 +393,7 @@ label unfathomable_feeling_day_4:
 
     scene ext_houses_day with fade
 
+    play music music_list["eat_some_trouble"] loop fadein 2
     play ambience ambience_camp_center_day loop fadein 4
 
     "На улице был пик солнечного стояния: {w}светило активно испепеляло всех пионеров, посмевших выйти из домиков." 
@@ -448,6 +456,7 @@ label unfathomable_feeling_day_4:
 
     scene int_dining_hall_people_sunset
 
+    play music music_list["waltz_of_doubts"] loop fadein 2
     play ambience ambience_dining_hall_full loop fadein 4
 
     hide blink
@@ -476,7 +485,7 @@ label unfathomable_feeling_day_4:
     me "И вновь привет, {w}как поиски?"
     "Поздоровался я, садясь за стол."
     
-    show el sad pioneer with fade
+    show el sad pioneer with dspr
 
     el "Весь лагерь обыскали, {w}ничего не нашли."
     "Его лицо погрустнело."
@@ -485,14 +494,14 @@ label unfathomable_feeling_day_4:
     me "Вот мы как раз-то и обнаружили хоть какую-то зацепку! {w}Он потерял свою обувь."
     "Я деловито поднял указательный палец ввысь."
     
-    show el smile pioneer with fade
+    show el smile pioneer with dspr
 
     el "Что? {w}Где?"
     "Кибернетик оживился."
     
     me "Около тропинки в заброшенный корпус, {w}не знаешь что он мог там делать?"
     
-    show el normal pioneer with fade
+    show el normal pioneer with dspr
 
     el "Точно! {w}Как я сам не догадался?"
     "Он отодвинул тарелку и ударил себя ладонью по лбу."
@@ -500,7 +509,7 @@ label unfathomable_feeling_day_4:
     "Он прекратил свой монолог."
     el "Семён..."
 
-    show el sad pioneer with fade
+    show el sad pioneer with dspr
     
     me "Нет. Мы с Мику и так многим помогли. {w}Извини, но нет."
     "Электроник приуныл."
@@ -526,7 +535,7 @@ label unfathomable_feeling_day_4:
     me "Да, он сейчас скорее всего в старом лагере."
     "Равнодушно ответил я."
     
-    show mi shoked pioneer with fade
+    show mi shocked pioneer with dspr
 
     mi "И что!? {w}Он там один весь день?"
     "Мику действительно волновалась за него, как за брата."
@@ -534,12 +543,12 @@ label unfathomable_feeling_day_4:
     me "Возможно ещё и ночь."
     "Хладно добавил я и понял что совершил ошибку. {w}Лицо Мику перекосилось, и наряду с разочарованием там можно было прочесть немного ярости."
     
-    show mi dontlike pioneer with fade
+    show mi dontlike pioneer with dspr
 
     mi "В общем так! {w}Либо ты идёшь со мной, либо я иду одна."
     "Она сложила руки на груди и укоризненно смотрела на меня, дожидаясь ответа."
     
-    show mi normal pioneer with fade
+    show mi normal pioneer with dspr
 
     me "Да я же пошутил."
     "Я улыбнулся, {w}и лицо девушки стало принимать более-менее нормальный вид."
@@ -547,7 +556,7 @@ label unfathomable_feeling_day_4:
     me "Тем более сейчас почти ночь, {w}ты заблудиться хотела в лесу?"
     me "Я тоже беспокоюсь за Шурика, {w}но это уже слишком."
     
-    show mi sad pioneer with fade
+    show mi sad pioneer with dspr
 
     mi "Возможно ты прав..."
     "Выдавила она, {w}и с грустным видом ушла из столовой."
@@ -560,6 +569,7 @@ label unfathomable_feeling_day_4:
 
     scene int_house_male_sunset with fade
 
+    play music music_list["tried_to_bring_it_back"] loop fadein 2
     play ambience ambience_int_cabin_evening loop fadein 4
 
     "Я не придумал ничего лучше, {w}чем просто пойти спать к себе домой."
@@ -568,6 +578,8 @@ label unfathomable_feeling_day_4:
     show blink
     window hide
     pause(1.5)
+
+    play music music_list["trapped_in_dreams"] loop fadein 2
 
     "Яркий свет ударил мне в глаза, {w}я нехотя открыл их, но пожалел о своём поступке."
 
@@ -584,7 +596,7 @@ label unfathomable_feeling_day_4:
     "Свет мгновенно погас,{w} а я открыл глаза. Они вновь стали медленно привыкать к темноте, {w}пытаясь выяснить личность моего пробудителя." 
     "Передо мной стояла Мику собственной персоной и крутила в руках небольшой стальной фонарь."
     
-    show mi happy pioneer with fade
+    show mi happy pioneer with dspr
 
     mi "Теперь-то мы не заблудимся!"
     "К ней вернулась прежняя беззаботность."
@@ -597,7 +609,7 @@ label unfathomable_feeling_day_4:
     me "Ладно, пойдём."
     "Я встал с кровати, и только сейчас обнаружил, {w}что спал в форме, даже не расправив кровать." 
 
-    scene ext_houses_sunset with fade
+    scene ext_path_sunset with fade
 
     "Мику шла вприпрыжку немного впереди меня, а я еле поспевал за ней."
 
@@ -609,10 +621,14 @@ label unfathomable_feeling_day_4:
     window hide
     pause(1.5)
 
+    $ persistent.sprite_time = "night"
+    $ night_time()
+
     scene ext_old_building_night_moonlight
 
     show mi normal pioneer
 
+    play music music_list["you_won_t_let_me_down"] loop fadein 2
     play ambience ambience_old_camp_outside loop fadein 4
 
     hide blink
@@ -647,7 +663,7 @@ label unfathomable_feeling_day_4:
     me "Что-нибудь случилось?"
     "Я зевнул."
     
-    show mi sad pioneer with fade
+    show mi sad pioneer with dspr
 
     mi "Да, я твой патефон потеряла."
     "Она немного расстроилась."
@@ -655,7 +671,7 @@ label unfathomable_feeling_day_4:
     me "Зачем ты его всегда везде носишь?"
     "Спросил я, {w}подавая ей плеер, который приметил несколькими минутами ранее."
 
-    show mi smile pioneer with fade
+    show mi smile pioneer with dspr
 
     mi "Это же подарок!"
     "Расстройство ушло и она снова стала улыбаться."
@@ -664,6 +680,9 @@ label unfathomable_feeling_day_4:
 
     "Я посмотрел на место, куда упал плеер. {w}Небольшой ровный кусок прохладного железа выглядывал из-за линолеума." 
     "Я отодвинул пару слоев покрытия и увидел люк. {w}Судя по следам на крышке, его недавно открывали." 
+
+    scene int_old_building_hatch with fade
+    
     "Я навалил на него всем весом, и крышка поддалась. {w}Я подозвал Мику, спустился первым, проверив ступени и дал добро девушке." 
     
     show blink
@@ -672,6 +691,7 @@ label unfathomable_feeling_day_4:
 
     scene int_catacombs_entrance
 
+    play music music_list["drown"] loop fadein 2
     play ambience ambience_catacombs loop fadein 4
 
     hide blink
@@ -695,8 +715,11 @@ label unfathomable_feeling_day_4:
     
     hide mi shocked pioneer with dissolve
 
-    "На неё подействовал этот аргумент, {w}и она быстро подбежала к другой стороне вентиля. 
-    Он протяжно заскрипел, {w}после чего сдался и открыл дверь в бомбоубежище."
+    "На неё подействовал этот аргумент, {w}и она быстро подбежала к другой стороне вентиля."
+
+    play sound sfx_carousel_squeak
+
+    "Он протяжно заскрипел, {w}после чего сдался и открыл дверь в бомбоубежище."
 
     scene int_catacombs_living with fade
 
@@ -738,7 +761,7 @@ label unfathomable_feeling_day_4:
     "Обойти её не представлялось возможным, {w}тем более что дальше по коридору был обвал." 
     "Я заглянул в неё: внизу расстилались рельсы, {w}а сама яма была неглубокой – при желании можно было бы вернуться обратно."
 
-    show mi dontlike pioneer with fade
+    show mi dontlike pioneer with dspr
 
     mi "Думаешь, он там?"
     "Мику недоверчиво посмотрела в яму."
@@ -748,7 +771,10 @@ label unfathomable_feeling_day_4:
 
     scene int_mine with fade
 
-    play sound sfx_jump_into_hole
+    play sound an_unfathomable_feeling_sfx_jump_into_hole
+
+    play music music_list["into_the_unknown"] loop fadein 2
+    play ambience ambience_catacombs_stones fadein 4
 
     "Приземление вышло мягким, {w}я упал ровно на шпалу."
 
@@ -763,7 +789,7 @@ label unfathomable_feeling_day_4:
     me "Всё в порядке?"
     "Мой голос впитали стены."
     
-    show mi sad pioneer with fade
+    show mi sad pioneer with dspr
 
     mi "Д-да. {w}Только нога болит, {w}вроде вывихнула."
     "Она расстроилась."
@@ -793,10 +819,12 @@ label unfathomable_feeling_day_4:
     "Я тепло улыбнулся и легонько стукнул её по лбу."
     me "Говорят, {w}из любого лабиринта можно выбраться, всё время идя вдоль одной из стенок."
     "Но всегда ли верное решение – самое простое?" 
-    
-    "Мы прошли ещё несколько развилок поворачивая направо, {w}fпока наконец не настигли деревянную дверь."
+
+    "Мы прошли ещё несколько развилок поворачивая направо, {w}пока наконец не настигли деревянную дверь."
 
     scene int_mine_door with fade
+
+    play music music_list["faceless"] loop fadein 2
 
     me "Наконец-то."
     "Выдохнул я."
@@ -813,33 +841,52 @@ label unfathomable_feeling_day_4:
     window hide
     pause(1.5)
 
-    scene d4_sh_stay
+    scene int_mine_door
+
+    show uv normal
 
     hide blink
     show unblink
     pause(1.5)
     window show
 
-    mi "Семён, вставай, {w}у тебя мало времени."
+    uvp "Семён, вставай, {w}у тебя мало времени."
     "Голос разбудил меня."
     
+    hide un normal
+
     "Я повернулся в сторону звука, {w}но существо уже убежало. Единственное, что я успел заметить – кошачьи уши и хвост." 
     "Причудится же..."
     
     "Только сейчас я заметил, {w}что Мику нет рядом со мной, а деревянная дверь отперта."
     
+    scene d4_sh_stay with fade
+
+    play music music_list["awakening_power"] loop fadein 2
+
     "Я резко забежал внутрь и увидел, {w}как Шурик замахивается арматурой на девушку. {w}Мику же, из-за больной ноги немного пятилась от него."
     "Когда я зашел, девушка посмотрела на меня и остановилась. Именно этот момент выбрал Шурик для нанесения удара."
     "Арматура с чавкающим звуком вонзилась в плечо Мику, а Шурик принялся бежать. {w}Его попытки остановил мой кулак."
     "Кибернетик упал на пол, а я обнаружил в углу кусок трубы. {w}Я замахнулся, и со всей силы ударил по голове Александра, после чего её содержимое оказалось на полу."
     "Девушка, до этого тихо стонущая и плачущая в углу, закричала. {w}Я подполз к ней. Осмотрел комнату. {w}Как бы иронично это не звучало, это и есть комната из моего сна."
-    
+
+    show blink
+    window hide
+    pause(1.5)
+
+    scene int_mine_room
+
     show mi normal pioneer with fade
+
+    hide blink
+    show unblink
+    pause(1.5)
+    window show
 
     me "Мику, всё будет хорошо, слышишь?"
     "Я попытался вытащить арматуру, но девушка отстранилась и встала во весь рост."
     
-    show mi dontlike pioneer with fade
+    show mi dontlike pioneer with dspr
 
     mi "Сеня, {w}Сеня, {w}Семён!
     Она злобно посмотрела на меня."
@@ -864,20 +911,20 @@ label unfathomable_feeling_day_4:
 
     "Пелена сна ушла, а на моих коленях сидела Мику, {w}потряхивая меня за плечи."    
 
-    show mi shy pioneer with fade
+    show mi shy pioneer with dspr
 
     "Я что было сил обнял её, {w}пока она не прошептала."
     
     mi "Ты меня сейчас задушишь..."
 
-    show mi normal with fade
+    show mi normal with dspr
 
     "Я выпустил её из объятий."
 
     me "Как нога?"
     "Спросил я, {w}смотря на то, как она уверенно стоит."
     
-    show mi smile pioneer with fade
+    show mi smile pioneer with dspr
 
     mi "Вроде прошла."
     "Она улыбнулась."
@@ -917,6 +964,8 @@ label unfathomable_feeling_day_4:
     
     "Мику всё это время стоявшая в углу подала голос."
     
+    play music music_list["lightness"] loop fadein 2
+
     mi "Давайте сначала выберемся отсюда, {w}а потом спорьте сколько влезет!"
     
     me "Если мне не изменяла память, {w}тот тут есть выход за Гендой."
@@ -956,9 +1005,9 @@ label unfathomable_feeling_day_4:
     me "Что ты хочешь за это?"
     
     pi "А ты немного умнее остальных. {w}Но ты прав, у меня есть условие. {w}Ты никогда не встретишь Мику." 
-    "Ни в одном из лагерей, ни в одной из реальностей. {w}Эдакий побочный эффект."
+    pi "Ни в одном из лагерей, ни в одной из реальностей. {w}Эдакий побочный эффект."
     
-    show pi smile with fade
+    show pi smile with dspr
 
     pi "А вот теперь думай. {w}Оставаться в мире декораций, или пойти к настоящему, но один раз? {w}Глоток свободы перед вечным заточением, или просто вечное заточение?"
     "Он залился хохотом."
@@ -976,7 +1025,10 @@ label unfathomable_feeling_day_4:
     pause(1.5)
 
     "Я ещё раз посмотрел на Мику, поцеловал её в лоб и прошептал {w}\"до встречи!\", после чего кивнул пионеру."
-    "Мир вокруг меня начал исчезать, столовая, памятник, всё смешивались в одно месиво. {w}Я отпустил щеки Мику и она испарилось тоже."
+
+    play music music_list["door_to_nightmare"] loop fadein 2
+
+    "Мир вокруг меня начал исчезать, столовая, памятник, всё смешивались в одно месиво. {w}Я отпустил щеки Мику и она испарилась тоже."
     "Вскоре вокруг меня начали проявляться детали..." 
 
     scene bg int_bus

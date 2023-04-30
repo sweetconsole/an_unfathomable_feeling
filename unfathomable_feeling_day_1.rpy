@@ -212,12 +212,12 @@ label unfathomable_feeling_day_1:
 
     "Я открыл их минуты через две, {w}когда заметил мелькающую фигуру сквозь веки, {w}идущую предположительно на меня. {w}Это была та незнакомка у ворот."
 
-    show sl happy pioneer with fade
+    show sl happy pioneer with dspr
 
     slp "Ты потерялся?" 
     "Спросила она, {w}легко улыбнувшись."
 
-    show sl normal pioneer with fade
+    show sl normal pioneer with dspr
 
     me "Нет, присел отдохнуть…"
 
@@ -295,8 +295,12 @@ label unfathomable_feeling_day_1:
     mt "Привет, {w}пионер, {w}я Ольга Дмитиевна, {w}вожатая."
     "Сказала она гордо."
 
+    show sl smile pioneer with dspr
+
     sl "Ой, {w}а я так и не представилась, {w}я — Славя, помощница."
     "Добро улыбнулась мне."
+
+    show sl normal pioneer with dspr
 
     mt "Тебя Семёном звать, так? {w}Твои родители недавно позвонили, {w}Славя передала мне что ты полчаса как тут."
     "Она посмотрела в сторону Слави."
@@ -338,13 +342,13 @@ label unfathomable_feeling_day_1:
 
     "Я быстро нашёл взглядом свободное место, {w}забрал порцию и присел за столик вместе с девочкой, {w}вероятно японкой, {w}с двумя длинными хвостами цвета морской волны."
 
-    show mi happy pioneer with fade
+    show mi happy pioneer with dspr
 
     mip "Привет, {w}ты наверно новенький? {w}А чего приехал так поздно?"
     mi "Все уже две недели в лагере, {w}а ты только приехал, {w}меня кстати Мику зовут, {w}честно, {w}честно."
     mi "Мне никто не верит, {w}хотя у меня мама из Японии, {w}а папа русский инженер, {w}он с мамой познакомился когда строил электростанцию, {w}или мост…"
 
-    show mi normal pioneer with fade
+    show mi normal pioneer with dspr
 
     "Она запнулась, {w}а я начал переваривать этот поток слов. {w}Счастье моё было недолгим."
 
@@ -354,7 +358,7 @@ label unfathomable_feeling_day_1:
     me "А-а. {w}Это ээ… {w}Обходной."
     "Выдавил я."
 
-    show mi happy pioneer with fade
+    show mi happy pioneer with dspr
 
     mi "Точно! {w}Ты же с лагерем не знаком, {w}хочешь я тебя проведу, {w}а то ты наверное не знаешь где здесь что находится, {w}заодно может в мой музыкальный кружок запишешься?"
     "Она вопросительно посмотрела на меня."
@@ -466,12 +470,12 @@ label unfathomable_feeling_day_1:
 
     me "В твой? {w}Возможно. {w}А кто там ещё есть?"
 
-    show mi sad pioneer with fade
+    show mi sad pioneer with dspr
 
     mi "Никого."
     "Она немного приуныла."
 
-    show mi happy pioneer with fade
+    show mi happy pioneer with dspr
 
     mi "Но если ты запишешься {w}нас будет уже двое!"
 
@@ -531,7 +535,7 @@ label unfathomable_feeling_day_1:
     me "Х-хорошо"
     "Похабность и пошлость из неё можно было выкачивать литрами."
 
-    show cs smile glasses with fade
+    show cs smile glasses with dspr
 
     cs "Раздевайся, {w}проведём осмотр"
     "Она ехидно улыбнулась."
@@ -542,7 +546,7 @@ label unfathomable_feeling_day_1:
     cs "Конечно…"
     "Она начала подходить ко мне."
 
-    show mi normal pioneer at left with fade
+    show mi normal pioneer at left with dspr
 
     "Вдруг в медпункт влетела Мику с запыхавшимся видом."
 
@@ -582,7 +586,7 @@ label unfathomable_feeling_day_1:
     me "Ну… ты вбежала… сказала…"
     "Я начал подбирать слова."
 
-    show mi happy pioneer with fade
+    show mi happy pioneer with dspr
 
     mi "А-а-а. Нужно было спасать тебя."
     "Она улыбнулась."
@@ -643,7 +647,7 @@ label unfathomable_feeling_day_1:
     me "Можно?"
     "Я указал в сторону рояля."
 
-    show mi happy pioneer with fade
+    show mi happy pioneer with dspr
 
     mi "Конечно! {w}А ты играешь на чём нибудь? {w}Я имею в виду увлекаешься? {w}Я на всём тут умею, могу и тебя научить!"
     "Она мечтательно отвела глаза."
@@ -651,8 +655,6 @@ label unfathomable_feeling_day_1:
     show blink
     window hide
     pause(1.5)
-
-    hide mi happy pioneer
 
     scene me_mi_piano_musclub
 
@@ -693,13 +695,13 @@ label unfathomable_feeling_day_1:
     pause(1.5)
     
     "Я погрузился в размышления."
-    "« Мику всегда в этом клубе, {w}одна. {w}Может стоит записаться? »" 
-    "« Если это и сон, {w}то я вынесу из него какие-то навыки, {w}всяко лучше чем бродить по лагерю без дела, {w}или что ещё хуже — выполнять поручения вожатой.»"
+    "«Мику всегда в этом клубе, {w}одна. {w}Может стоит записаться?»" 
+    "«Если это и сон, {w}то я вынесу из него какие-то навыки, {w}всяко лучше чем бродить по лагерю без дела, {w}или что ещё хуже — выполнять поручения вожатой.»"
     "Музыка затихла"
 
     scene int_musclub_sunset
 
-    show mi normal pioneer with fade
+    show mi normal pioneer
 
     play ambience ambience_music_club_day loop fadein 4
     play music music_list["so_good_to_be_careless"] loop fadein 2
@@ -711,7 +713,7 @@ label unfathomable_feeling_day_1:
     me "Мику…"
     "Начал я тихо."
 
-    show mi sad pioneer with fade
+    show mi sad pioneer with dspr
 
     mi "Да?"
     "Она грустно посмотрела мне прямо в глаза, {w}словно ожидая чего-то."
@@ -719,14 +721,14 @@ label unfathomable_feeling_day_1:
     me "Я пожалуй запишусь к тебе."
     "Она отвела взгляд немного подумав, {w}вздохнула и снова начала."
 
-    show mi happy pioneer with fade
+    show mi happy pioneer with dspr
 
     mi "Прекрасно, {w}я сейчас запишу тебя, {w}а на какой инструмент ты хочешь записаться?"
     mi "Я уже говорила что я на всём умею? {w}Могу тебя научить, ты только скажи, {w}как же нам будет весело теперь вдвоём."
 
     me "Я играл на гитаре немного, {w}а так, {w}на чём научишь, на том и буду играть."
 
-    show mi normal pioneer with fade
+    show mi normal pioneer with dspr
 
     "Мику одобрительно кивнула и записала что-то в журнал."
     "«Ты упустил момент, чувак», {w}— констатировал внутренний голос. "
@@ -746,6 +748,7 @@ label unfathomable_feeling_day_1:
     "А также мне нужно было к Ольге Дмитриевной за формой и местом жительства."
 
     scene ext_house_of_mt_sunset
+    
     show mt normal pioneer 
 
     play music music_list["so_good_to_be_careless"] loop fadein 2
@@ -761,7 +764,7 @@ label unfathomable_feeling_day_1:
 
     mt "Итак, вот твоя форма."
     "Она протянула мне пакет."
-    mt "Там же умывальные принадлежности и ключ от 53 домика. Ты будешь жить один, благо незанятые домики у нас ещё остались."
+    mt "Там же умывальные принадлежности и ключ от 53 домика. {w}Ты будешь жить один, благо незанятые домики у нас ещё остались."
     mt "Можешь прогуляться перед сном. {w}Отбой в 10."
 
     me "Хорошо. {w}Сладких снов."
@@ -791,7 +794,7 @@ label unfathomable_feeling_day_1:
     me "Привет!"
     "Я махнул ей рукой."
 
-    show mi happy pioneer with fade
+    show mi happy pioneer with dspr
 
     mi "Виделись! {w}А что ты здесь делаешь? {w}Ты пришёл узнать что-то, {w}или уточнить, {w}да?"
     "Она улыбнулась."
@@ -799,7 +802,7 @@ label unfathomable_feeling_day_1:
     me "Нет, {w}я здесь неподалёку."
     "Я указал на домик."
 
-    show mi shy pioneer with fade
+    show mi shy pioneer with dspr
 
     mi "Это хорошо, {w}а я твоя соседка получается, {w}если пригодится что-нибудь, {w}соль там, {w}заходи."
     "Она залилась краской, {w}попрощалась и впорхнула в свой домик."

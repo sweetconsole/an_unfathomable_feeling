@@ -12,6 +12,7 @@ label unfathomable_feeling_day_2:
     pause(1)
 
     play music music_list["i_want_to_play"] loop fadein 2
+    play ambience ambience_int_cabin_day loop fadein 4
 
     window show
 
@@ -38,12 +39,12 @@ label unfathomable_feeling_day_2:
     me "Мику!? {w}Ты что здесь делаешь?"
     "Сон мгновенно улетучился, {w}а я с ошарашенным видом смотрел на неё."
 
-    show mi shy pioneer with fade
+    show mi shy pioneer with dspr
 
     mi "Я пыталась разбудить тебя, {w}но ты никак не просыпался."
     "Её щёки начинали краснеть"
 
-    show mi upset pioneer with fade
+    show mi upset pioneer with dspr
 
     mi "Ты мог пропустить завтрак, {w}а на голодный желудок я тебя учить игре на гитаре не собираюсь!"
     "Она сделала вид что надулась, {w}но у неё это вышло мило и неубедительно."
@@ -52,7 +53,7 @@ label unfathomable_feeling_day_2:
     "Я вопросительно посмотрел на неё."
     me "Ты не могла бы выйти?"
 
-    show mi happy pioneer with fade
+    show mi happy pioneer with dspr
 
     mi "Ой, {w}точно."
 
@@ -99,6 +100,7 @@ label unfathomable_feeling_day_2:
     pause(1.5)
 
     scene ext_washstand_day
+
     show mi shocked pioneer
 
     hide blink
@@ -113,7 +115,7 @@ label unfathomable_feeling_day_2:
     "Я широко улыбнулся."
     me "Привыкаю к местной воде."
 
-    show mi happy pioneer with fade
+    show mi happy pioneer with dspr
 
     mi "А, {w}точно, {w}она здесь такая холодная, {w}я когда первый раз облилась, {w}чуть в обморок от шока не упала, {w}но ты потом привыкнешь, {w}как я."
     mi "Сейчас для меня вода {w}— тепленькая."
@@ -163,7 +165,7 @@ label unfathomable_feeling_day_2:
     me "Можно?"
     "Спросил я, {w}отодвигая стул."
 
-    show mi dontlike pioneer with fade
+    show mi dontlike pioneer with dspr
 
     mi "Занято."
     "Железобетонным голосом ответила девушка."
@@ -171,7 +173,7 @@ label unfathomable_feeling_day_2:
     me "Даже для меня?"
     "Я усмехнулся и она обернулась."
 
-    show mi shy pioneer with fade
+    show mi shy pioneer with dspr
 
     mi "Ой, извини."
     "Она покраснела, {w}после чего забрала свою порцию у меня из рук и поставила её на стол."
@@ -180,7 +182,7 @@ label unfathomable_feeling_day_2:
     "Я сел."
     me "Хорошо держишь пост."
 
-    show mi happy pioneer with fade
+    show mi happy pioneer with dspr
 
     mi "Спасибо"
     "Она улыбнулась."
@@ -214,18 +216,18 @@ label unfathomable_feeling_day_2:
     "Мику была немногословной."
     mi "Просто задумалась."
 
-    show mi happy pioneer with fade
+    show mi happy pioneer with dspr
     
     "Через мгновение девушка оживилась и остальной завтрак прошёл в разговорах обо всем на свете."
     "Серьёзно. {w}Невозможно выделить в одной реплике Мику меньше двух тем."
     "Она ловко перепрыгивала с одной темы на другую, {w}как будто играя на клавишах, {w}и всегда зажимая нужную."
     "Но иногда в этих разговорах было заметно что-то странное."
 
-    show mi shy pioneer with fade
+    show mi shy pioneer with dspr
 
     "Например, {w}если во время пулеметной очереди слов я начинаю смотреть ей прямо в глаза, {w}она замолкает, {w}отводит взгляд и краснеет."
     
-    show mi happy pioneer with fade
+    show mi happy pioneer with dspr
     
     "Но, {w}как обычно, {w}при малейшем намёке на это снова оживляется и продолжает разговор."
 
@@ -266,7 +268,7 @@ label unfathomable_feeling_day_2:
     me "Спасибо, {w}давай я попробую сыграть что-нибудь."
     "Я взял протянутую гитару."
 
-    scene me_mi_guitar_musclub with fade
+    scene me_mi_guitar_musclub with dspr
 
     "Следующие несколько часов прошли как один миг. {w}Она рассказывала мне о моих ошибках и поправляла."
     "Мои аккорды стали звонче, {w}бои ритмичнее. {w}И что самое удивительное, {w}я не уставал от занятий."
@@ -285,6 +287,7 @@ label unfathomable_feeling_day_2:
     $ day_time()
 
     scene int_musclub_day
+
     show mi normal pioneer 
 
     play ambience ambience_music_club_day loop fadein 4
@@ -299,7 +302,7 @@ label unfathomable_feeling_day_2:
     "Она достала из нагрудного кармана плеер и протянула мне."
     "Я взял вещь из протянутой руки. {w}Это был мой плеер..."
 
-    show mi happy pioneer with fade
+    show mi happy pioneer with dspr
 
     mi "Что это, {w}Семён?"
     "Она улыбнулась мне."
@@ -323,7 +326,7 @@ label unfathomable_feeling_day_2:
     "Я протянул ей проигрыватель."
     me "Дарю."
 
-    show mi shy pioneer with fade
+    show mi shy pioneer with dspr
 
     mi "Мне так неудобно, {w}так внезапно и без причины."
     "Она покраснела."
@@ -361,7 +364,7 @@ label unfathomable_feeling_day_2:
     dvp "Я думала ты одна сидишь, {w}а ты новеньких оказывается совращаешь!"
     "Она осмотрела Мику, {w}перевела взгляд на меня и подмигнула."
 
-    show mi shy pioneer with fade
+    show mi shy pioneer with dspr
 
     "Мику вышла из ступора первой, {w}и начала оправдываться."
 
@@ -372,7 +375,7 @@ label unfathomable_feeling_day_2:
     "Она протянула мне руку."
     dv "Только не надо врать, {w}что вы здесь музыкой занимались."
 
-    show mi sad pioneer with fade
+    show mi sad pioneer with dspr
 
     mi "Но это так!"
     "Грустно вскрикнула Мику."
@@ -381,7 +384,7 @@ label unfathomable_feeling_day_2:
     "Я взял её за руку, {w}из-за чего она вздрогнула, {w}но не отдёрнула."
     me "Каждый думает в меру своей испорченности, {w}да, Алиса?"
 
-    show dv angry pioneer2 with fade
+    show dv angry pioneer2 with dspr
 
     dv "Ага. Кое-кто хотел уже уходить, {w}верно?"
     "Она сжала кулачки."
@@ -399,9 +402,7 @@ label unfathomable_feeling_day_2:
 
     scene int_house_male_day
 
-    play ambience ambience_day_countryside_ambience
-
-    hide mi sad pioneer 
+    play ambience ambience_int_cabin_day loop fadein 4
 
     hide blink
     show unblink
@@ -466,7 +467,7 @@ label unfathomable_feeling_day_2:
 
     "Она грустно заглянула мне в глаза, {w}пытаясь найти что-нибудь в них, {w}надежда, {w}доверие читалось в её взгляде."
 
-    show mi happy with fade
+    show mi happy with dspr
 
     mi "Сегодня после ужина, {w}на пристани."
     "Она наградила меня лёгкой улыбкой."
@@ -513,6 +514,8 @@ label unfathomable_feeling_day_2:
     "Мой голос звучал грустнее, {w}и заряд позитива начал угасать во мне."
     me "Ты знаешь Мику?"
 
+    show sl normal pioneer with dspr
+
     sl "Не очень."
     "Она отложила ложку."
     sl "Спроси у Лены, они соседки, {w}она должна с ней общаться."
@@ -532,6 +535,8 @@ label unfathomable_feeling_day_2:
     
     me "Тебе помочь в поисках?"
     "Я нацепил сосиску на вилку."
+
+    show sl smile pioneer with dspr
 
     sl "Вообще-то я уже нашла его."
     "Улыбка не сходила с её лица."
@@ -837,7 +842,7 @@ label unfathomable_feeling_day_2:
     me "Кто ты, {w}и что тебе нужно?"
     "Пионер сидел молча, {w}на его лице не было ни одной эмоции."
     
-    show pi smile with fade
+    show pi smile with dspr
 
     pi "Мне нравится, как ты играешь с этой куклой."
     "Он усмехнулся, но его улыбка вышла натянутой."
