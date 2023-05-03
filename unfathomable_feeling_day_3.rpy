@@ -708,7 +708,7 @@ label unfathomable_feeling_day_3:
     "Когда очередной сон подходил к концу, я вернулся в сознание. {w}Я быстро вскочил, {w}надел на себя рубашку и посмотрел на часы." 
     "Ужин проспан, {w}а танцы уже 10 минут как начались. Сон сняло как рукой." 
 
-    scene int_house_male_nightа with fade
+    scene int_house_male_night with fade
 
     "Галстук полетел на кровать, {w}а я вылетел из домика, благо он был совсем рядом с площадью."
     
@@ -902,7 +902,7 @@ label unfathomable_feeling_day_3:
     window hide
     pause(1.5)
     
-    scene ext_music_club_night
+    scene ext_musclub_night
 
     hide blink
     show unblink

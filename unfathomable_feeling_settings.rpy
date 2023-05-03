@@ -22,7 +22,7 @@ init:
 
     image int_bus_rain_sunset = path_dir + "images/bg/int_bus_rain_sunset.jpg"
     image int_dining_hall_people_sunset = path_dir + "images/bg/int_dining_hall_people_sunset.jpg"
-    image int_dva_dish_sunset = path_dir + "images/bg/int_dva_dish_sunset"
+    image int_dva_dish_sunset = path_dir + "images/bg/int_dva_dish_sunset.jpg"
     image int_house_male_day = path_dir + "images/bg/int_house_male_day.jpg"
     image int_house_male_night = path_dir + "images/bg/int_house_male_night.jpg"
     image int_house_male_sunset = path_dir + "images/bg/int_house_male_sunset.jpg"
