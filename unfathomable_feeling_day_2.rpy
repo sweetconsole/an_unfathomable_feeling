@@ -5,7 +5,7 @@ label unfathomable_feeling_day_2:
     pause(1)
 
     $ backdrop = "days"
-    $ new_chapter(2, u"Непостижимое чувство. Второй день")
+    $ new_chapter(2, u"Непостижимое чувство.\nВторой день")
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
 

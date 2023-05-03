@@ -5,7 +5,7 @@ label unfathomable_feeling_day_1:
     pause(1)
 
     $ backdrop = "days"
-    $ new_chapter(1, u"Непостижимое чувство. Первый день")
+    $ new_chapter(1, u"Непостижимое чувство.\nПервый день")
     $ persistent.sprite_time = "day"
     $ day_time()
 
@@ -617,7 +617,7 @@ label unfathomable_feeling_day_1:
     "«Ну да, за один взгляд, за мгновение можно, а за день нельзя. {w}Утешай себя», {w}— он усмехнулся."
     "«Заткнись и не порть момент», {w}— резко ответил я."
 
-    scene ext_musclub_day_sunset with fade
+    scene ext_musclub_sunset with fade
 
     play music music_list["so_good_to_be_careless"] loop fadein 2
 

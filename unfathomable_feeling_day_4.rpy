@@ -5,7 +5,7 @@ label unfathomable_feeling_day_4:
     pause(1)
 
     $ backdrop = "days"
-    $ new_chapter(4, u"Непостижимое чувство. Четвёртый  день")
+    $ new_chapter(4, u"Непостижимое чувство.\nЧетвёртый  день")
     $ persistent.sprite_time = "day"
     $ night_time()
     $ day_time()
@@ -934,7 +934,7 @@ label unfathomable_feeling_day_4:
     me "Пошли." 
     "Я уже знал что ждёт меня за этой дверью."
 
-    scene day4_sh_sit with fade
+    scene d4_sh_sit with fade
 
     "Шурик сидел и сопел в обнимку с арматурой, и странно улыбался. {w}Я не успел сказать Мику отойти, но я не мог её ещё раз потерять." 
     "Кибернетик делал замах, и в этот же момент я ударил его в печень. {w}Саша загнулся и выронил арматуру."
