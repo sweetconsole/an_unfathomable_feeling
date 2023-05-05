@@ -16,6 +16,7 @@ init:
     image ext_houses_night = path_dir + "images/bg/ext_houses_night.jpg"
     image ext_musclub_night = path_dir + "images/bg/ext_music_club_night.jpg"
     image ext_musclub_sunset = path_dir + "images/bg/ext_music_club_sunset.jpg"
+    image ext_music_club_veranda_day = path_dir + "images/bg/ext_music_club_veranda_day.jpg"
     image ext_shower_room = path_dir + "images/bg/ext_shower_room.jpg"
     image ext_stage_big_sunset = path_dir + "images/bg/ext_stage_big_sunset.jpg"
     image ext_storage_day = path_dir + "images/bg/ext_storage_day.jpg"
@@ -39,6 +40,7 @@ init:
     image un_crazy_blood = path_dir + "images/cg/un_crazy_blood.jpg"
     image un_crazy_torch = path_dir + "images/cg/un_crazy_torch.jpg"
 
+    image list_indigrients = path_dir + "images/misc/list_indigrients.png"
     image phone disable = path_dir + "images/misc/phone_disable.png"
     image phone enable = path_dir + "images/misc/phone_enable.png"
 

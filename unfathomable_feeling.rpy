@@ -43,7 +43,7 @@ init 3:
     ]
 
 label unfathomable_feeling_start:
-    call screen unfathomable_feeling_menu with dissolve
+    # call screen unfathomable_feeling_menu with dissolve
 
     # $ persistent.sprite_time = "sunset"
     # show ck normal
@@ -57,4 +57,4 @@ label unfathomable_feeling_start:
     # show ck smile
     # "night"
 
-    # jump unfathomable_feeling_prologue
+    jump unfathomable_feeling_prologue
