@@ -13,6 +13,7 @@ label unfathomable_feeling_day_6:
 
     scene int_house_male_day with fade
 
+    play music music_list["i_want_to_play"] loop fadein 2
     play ambience ambience_lake_shore_day loop fadein 4
 
     window show
@@ -25,6 +26,7 @@ label unfathomable_feeling_day_6:
 
     "Подтянувшись и зевнув, я вышел на улицу."
 
+    window hide
     scene ext_houses_day with dissolve
 
     $ renpy.pause(1.0, hard=True)
@@ -34,6 +36,7 @@ label unfathomable_feeling_day_6:
     $ renpy.pause(1.0, hard=True)
 
     scene ext_washstand2_day with dissolve
+    window show
 
     "Я просто аккуратно пошёл к умывальникам, ещё раз подтянувшись. Вода сегодня не была ледяной, она была холодной, с нотками теплоты в вырывающейся из смесителя струе. "
     

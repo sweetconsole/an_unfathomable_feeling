@@ -15,15 +15,17 @@ init:
     image ext_house_of_un_sunset = path_dir + "images/bg/ext_house_of_un_sunset.jpg"
     image ext_houses_night = path_dir + "images/bg/ext_houses_night.jpg"
     image ext_musclub_night = path_dir + "images/bg/ext_music_club_night.jpg"
+    image ext_musclub_day = path_dir + "images/bg/ext_music_club_day.jpg"
     image ext_musclub_sunset = path_dir + "images/bg/ext_music_club_sunset.jpg"
     image ext_music_club_veranda_day = path_dir + "images/bg/ext_music_club_veranda_day.jpg"
     image ext_shower_room = path_dir + "images/bg/ext_shower_room.jpg"
+    image ext_stage_big_day = path_dir + "images/bg/ext_stage_big_day.jpg"
     image ext_stage_big_sunset = path_dir + "images/bg/ext_stage_big_sunset.jpg"
     image ext_storage_day = path_dir + "images/bg/ext_storage_day.jpg"
 
     image int_bus_rain_sunset = path_dir + "images/bg/int_bus_rain_sunset.jpg"
     image int_dining_hall_people_sunset = path_dir + "images/bg/int_dining_hall_people_sunset.jpg"
-    image int_dva_dish_sunset = path_dir + "images/bg/int_dva_dish_sunset.jpg"
+    image int_dva_dish_day = path_dir + "images/bg/int_dva_dish_day.jpg"
     image int_house_male_day = path_dir + "images/bg/int_house_male_day.jpg"
     image int_house_male_night = path_dir + "images/bg/int_house_male_night.jpg"
     image int_house_male_sunset = path_dir + "images/bg/int_house_male_sunset.jpg"
@@ -139,7 +141,7 @@ init:
     "persistent.sprite_time=='night'", im.MatrixColor( im.Composite((900, 1080), (0,0), path_dir + "images/sprites/mi/mi_3_blue_dress_upset.png"), im.matrix.tint(0.63, 0.78, 0.82) ),
     True, im.Composite((900, 1080), (0,0), path_dir + "images/sprites/mi/mi_3_blue_dress_upset.png") )
 
-    # YA 
+    # Яна
 
     image ya normal pioneer = ConditionSwitch(
     "persistent.sprite_time=='sunset'", im.MatrixColor( im.Composite((900, 1080), (0,0), path_dir + "images/sprites/ya/ya_normal.png"), im.matrix.tint(0.94, 0.82, 1.0) ),
