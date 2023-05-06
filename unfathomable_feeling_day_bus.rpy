@@ -2,14 +2,14 @@
 label unfathomable_feeling_day_bus:
     window hide
 
-    pause(1)
+    $ renpy.pause(1.0, hard=True)
 
     $ backdrop = "days"
     $ new_chapter(5, u"Непостижимое чувство.\nПромежуточные события.\nАвтобус.")
     $ persistent.sprite_time = "day"
     $ day_time()
 
-    pause(1)
+    $ renpy.pause(1.0, hard=True)
 
     scene int_bus_rain_sunset with fade
 

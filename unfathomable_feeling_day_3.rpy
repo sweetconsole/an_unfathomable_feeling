@@ -2,14 +2,14 @@
 label unfathomable_feeling_day_3:
     window hide
 
-    pause(1)
+    $ renpy.pause(1.0, hard=True)
 
     $ backdrop = "days"
     $ new_chapter(3, u"Непостижимое чувство.\nТретий  день")
     $ persistent.sprite_time = "day"
     $ night_time()
 
-    pause(1)
+    $ renpy.pause(1.0, hard=True)
 
     play music music_list["door_to_nightmare"] loop fadein 2
 

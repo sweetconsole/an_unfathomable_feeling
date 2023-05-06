@@ -2,7 +2,7 @@
 label unfathomable_feeling_day_1:
     window hide
 
-    pause(1)
+    $ renpy.pause(1.0, hard=True)
 
     $ backdrop = "days"
     $ new_chapter(1, u"Непостижимое чувство.\nПервый день")
@@ -12,7 +12,7 @@ label unfathomable_feeling_day_1:
     play ambience ambience_ext_road_day loop fadein 4
     play music music_list["no_tresspassing"] loop fadein 2
 
-    pause(1)
+    $ renpy.pause(1.0, hard=True)
 
     window show
 

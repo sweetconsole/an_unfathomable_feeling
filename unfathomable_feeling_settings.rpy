@@ -4,13 +4,13 @@ init:
 
     $ an_unfathomable_feeling_slow_dance = path_dir + "music/Scorpions_Maybe_I_Maybe_You.ogg"
     $ an_unfathomable_feeling_sfx_jump_into_hole = path_dir + "sounds/sfx_jump_into_hole.ogg" 
-    
 
     image ext_boathouse_sunset = path_dir + "images/bg/ext_boathouse_sunset.jpg"
     image ext_bus_sunset = path_dir + "images/bg/ext_bus_sunset.jpg"
     image ext_house_male_day = path_dir + "images/bg/ext_house_male_day.jpg"
     image ext_house_male_sunset = path_dir + "images/bg/ext_house_male_sunset.jpg"
     image ext_house_male_night = path_dir + "images/bg/ext_house_male_night.jpg"
+    image ext_lake_swim_day = path_dir + "images/bg/ext_lake_swim_day.jpg"
     image ext_house_of_un_night = path_dir + "images/bg/ext_house_of_un_night.jpg"
     image ext_house_of_un_sunset = path_dir + "images/bg/ext_house_of_un_sunset.jpg"
     image ext_houses_night = path_dir + "images/bg/ext_houses_night.jpg"
@@ -30,6 +30,7 @@ init:
     image int_musclub_sunset = path_dir + "images/bg/int_musclub_sunset.jpg"
     image int_old_building_hatch = path_dir + "images/bg/int_old_building_hatch.jpg"
 
+    image campfire = path_dir + "images/cg/campfire.jpg"
     image day2_breakfast = path_dir + "images/cg/day2_breakfast.jpg"
     image daytime_sky = path_dir + "images/cg/daytime_sky.jpg"
     image me_mi_dance = path_dir + "images/cg/me_mi_dance.jpg"
@@ -49,12 +50,12 @@ init:
     image ck normal = ConditionSwitch(
     "persistent.sprite_time=='sunset'", im.MatrixColor( im.Composite((900, 1080), (0,0), path_dir + "images/sprites/ck/ck_normal.png"), im.matrix.tint(0.94, 0.82, 1.0) ),
     "persistent.sprite_time=='night'", im.MatrixColor( im.Composite((900, 1080), (0,0), path_dir + "images/sprites/ck/ck_normal.png"), im.matrix.tint(0.63, 0.78, 0.82) ),
-    True,im.Composite((900, 1080), (0,0), path_dir + "images/sprites/ck/ck_normal.png") )
+    True, im.Composite((900, 1080), (0,0), path_dir + "images/sprites/ck/ck_normal.png") )
 
     image ck sad = ConditionSwitch(
     "persistent.sprite_time=='sunset'", im.MatrixColor( im.Composite((900, 1080), (0,0), path_dir + "images/sprites/ck/ck_sad.png"), im.matrix.tint(0.94, 0.82, 1.0) ),
     "persistent.sprite_time=='night'", im.MatrixColor( im.Composite((900, 1080), (0,0), path_dir + "images/sprites/ck/ck_sad.png"), im.matrix.tint(0.63, 0.78, 0.82) ),
-    True,im.Composite((900, 1080), (0,0), path_dir + "images/sprites/ck/ck_sad.png") )
+    True, im.Composite((900, 1080), (0,0), path_dir + "images/sprites/ck/ck_sad.png") )
 
     image ck smile = ConditionSwitch(
     "persistent.sprite_time=='sunset'", im.MatrixColor( im.Composite((900, 1080), (0,0), path_dir + "images/sprites/ck/ck_smile.png"), im.matrix.tint(0.94, 0.82, 1.0) ),
@@ -137,3 +138,20 @@ init:
     "persistent.sprite_time=='sunset'", im.MatrixColor( im.Composite((900, 1080), (0,0), path_dir + "images/sprites/mi/mi_3_blue_dress_upset.png"), im.matrix.tint(0.94, 0.82, 1.0) ),
     "persistent.sprite_time=='night'", im.MatrixColor( im.Composite((900, 1080), (0,0), path_dir + "images/sprites/mi/mi_3_blue_dress_upset.png"), im.matrix.tint(0.63, 0.78, 0.82) ),
     True, im.Composite((900, 1080), (0,0), path_dir + "images/sprites/mi/mi_3_blue_dress_upset.png") )
+
+    # YA 
+
+    image ya normal pioneer = ConditionSwitch(
+    "persistent.sprite_time=='sunset'", im.MatrixColor( im.Composite((900, 1080), (0,0), path_dir + "images/sprites/ya/ya_normal.png"), im.matrix.tint(0.94, 0.82, 1.0) ),
+    "persistent.sprite_time=='night'", im.MatrixColor( im.Composite((900, 1080), (0,0), path_dir + "images/sprites/ya/ya_normal.png"), im.matrix.tint(0.63, 0.78, 0.82) ),
+    True, im.Composite((900, 1080), (0,0), path_dir + "images/sprites/ya/ya_normal.png") )
+
+    image ya normal pioneer far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'", im.MatrixColor( im.Composite((900, 1080), (0,0), path_dir + "images/sprites/ya/ya_normal_far.png"), im.matrix.tint(0.94, 0.82, 1.0) ),
+    "persistent.sprite_time=='night'", im.MatrixColor( im.Composite((900, 1080), (0,0), path_dir + "images/sprites/ya/ya_normal_far.png"), im.matrix.tint(0.63, 0.78, 0.82) ),
+    True, im.Composite((900, 1080), (0,0), path_dir + "images/sprites/ya/ya_normal_far.png") )
+
+    image ya happy pioneer = ConditionSwitch(
+    "persistent.sprite_time=='sunset'", im.MatrixColor( im.Composite((900, 1080), (0,0), path_dir + "images/sprites/ya/ya_happy.png"), im.matrix.tint(0.94, 0.82, 1.0) ),
+    "persistent.sprite_time=='night'", im.MatrixColor( im.Composite((900, 1080), (0,0), path_dir + "images/sprites/ya/ya_happy.png"), im.matrix.tint(0.63, 0.78, 0.82) ),
+    True, im.Composite((900, 1080), (0,0), path_dir + "images/sprites/ya/ya_happy.png") )

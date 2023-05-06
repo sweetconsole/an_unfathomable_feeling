@@ -2,7 +2,7 @@
 label unfathomable_feeling_day_4:
     window hide
 
-    pause(1)
+    $ renpy.pause(1.0, hard=True)
 
     $ backdrop = "days"
     $ new_chapter(4, u"Непостижимое чувство.\nЧетвёртый  день")
