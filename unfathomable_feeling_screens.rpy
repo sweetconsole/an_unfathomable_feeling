@@ -54,13 +54,13 @@ init 2:
             xpos 300
             ypos 370
             idle path_dir + "images/menu/bg.png"
-            action ToggleScreen("unfathomable_feeling_gallery", transition=fade), SetVariable("gallery_type", "bg")
+            action ToggleScreen("unfathomable_feeling_gallery", transition=fade), SetVariable("gallery_type", "bg"), SetVariable("gallery_page", 0)
 
         imagebutton:
             xpos 1120
             ypos 370
             idle path_dir + "images/menu/cg.png"
-            action ToggleScreen("unfathomable_feeling_gallery", transition=fade), SetVariable("gallery_type", "cg")
+            action ToggleScreen("unfathomable_feeling_gallery", transition=fade), SetVariable("gallery_type", "cg"), SetVariable("gallery_page", 0)
 
     screen unfathomable_feeling_gallery:
         tag menu 
@@ -76,6 +76,32 @@ init 2:
                     action SetVariable("img_now", path_dir + "images/" + gallery_type + item[0]), Show("unfathomable_feeling_screen_img_now", transition=dissolve)
                 else:
                     idle path_dir + "images/menu/prev/ext_shower_room.jpg"
+                    
+        # imagebutton:
+        #     xpos 850
+        #     ypos 180
+        #     idle path_dir + "images/menu/arrows/up.png"
+        #     action SetVariable("gallery_page", gallery_page - 1)
+
+        # imagebutton:
+        #     xpos 850
+        #     ypos 760
+        #     idle path_dir + "images/menu/arrows/bottom.png"
+        #     action SetVariable("gallery_page", gallery_page + 1)
+
+        for page in range(len(gallery[gallery_type])):
+            if gallery_page != page:
+                imagebutton:
+                    xpos 875
+                    ypos page * 48 + 180
+                    idle path_dir + "images/menu/checkbox/idle.png"
+                    hover path_dir + "images/menu/checkbox/hover.png"
+                    action SetVariable("gallery_page", page)
+            else:
+                imagebutton:
+                    xpos 875
+                    ypos page * 48 + 180
+                    idle path_dir + "images/menu/checkbox/hover.png"
 
         textbutton "Выход":
             xpos 120

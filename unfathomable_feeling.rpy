@@ -20,8 +20,9 @@ init 3:
                 ["un_crazy_blood.jpg", True],
                 ["un_crazy_torch.jpg", True],
             ],[
-                ["mi_piano_musclub.jpg", True]
-            ]
+                ["mi_piano_musclub.jpg", True],
+                ["campfire.jpg", True],
+            ],
         ],
         "bg": [[
                 ["ext_house_male_day.jpg", True],
@@ -30,7 +31,13 @@ init 3:
                 ["int_bus_rain_sunset.jpg", True]
             ],[
                 ["int_house_male_day.jpg", True],
-                ["int_old_building_hatch.jpg", True]
+                ["int_old_building_hatch.jpg", True],
+                ["ext_lake_swim_day.jpg", True],
+                ["ext_pathway_boat_station.jpg", True],
+            ],[
+                ["int_dining_room_day.jpg", True],
+                ["int_dining_table_day.jpg", True],
+                ["int_dva_dish_day.jpg", True],
             ],
         ]   
     }
@@ -43,7 +50,7 @@ init 3:
     ]
 
 label unfathomable_feeling_start:
-    # call screen unfathomable_feeling_menu with dissolve
+    call screen unfathomable_feeling_menu with dissolve
 
     # $ persistent.sprite_time = "sunset"
     # show ck normal
@@ -57,4 +64,4 @@ label unfathomable_feeling_start:
     # show ck smile
     # "night"
 
-    jump unfathomable_feeling_prologue
+    # jump unfathomable_feeling_prologue
