@@ -34,6 +34,7 @@ init:
     image ext_storage_day = path_dir + "images/bg/ext_storage_day.jpg"
 
     image int_bus_rain_sunset = path_dir + "images/bg/int_bus_rain_sunset.jpg"
+    image int_bus_window_view = path_dir + "images/bg/int_bus_window_view.jpg"
     image int_dining_hall_people_sunset = path_dir + "images/bg/int_dining_hall_people_sunset.jpg"
     image int_dining_room_day = path_dir + "images/bg/int_dining_room_day.jpg"
     image int_dining_table_day = path_dir + "images/bg/int_dining_table_day.jpg"
@@ -48,7 +49,8 @@ init:
     image campfire = path_dir + "images/cg/campfire.jpg"
     image day2_breakfast = path_dir + "images/cg/day2_breakfast.jpg"
     image daytime_sky = path_dir + "images/cg/daytime_sky.jpg"
-    image me_mi_beach = path_dir + "images/cg/me_mi_beach.jpg"
+    image epilogue_inbus_1 = path_dir + "images/cg/epilogue_inbus_1.jpg"
+    image epilogue_inbus_2 = path_dir + "images/cg/epilogue_inbus_2.jpg"
     image me_mi_dance = path_dir + "images/cg/me_mi_dance.jpg"
     image me_mi_guitar_musclub = path_dir + "images/cg/me_mi_guitar_musclub.jpg"
     image me_mi_piano_musclub = path_dir + "images/cg/me_mi_piano_musclub.jpg"
@@ -107,6 +109,16 @@ init:
     "persistent.sprite_time=='sunset'", im.MatrixColor( im.Composite((900, 1080), (0,0), path_dir + "images/sprites/mi/mi_grin_summer.png"), im.matrix.tint(0.94, 0.82, 1.0) ),
     "persistent.sprite_time=='night'", im.MatrixColor( im.Composite((900, 1080), (0,0), path_dir + "images/sprites/mi/mi_grin_summer.png"), im.matrix.tint(0.63, 0.78, 0.82) ),
     True, im.Composite((900, 1080), (0,0), path_dir + "images/sprites/mi/mi_grin_summer.png") )
+
+    image mi dontlike summer = ConditionSwitch(
+    "persistent.sprite_time=='sunset'", im.MatrixColor( im.Composite((900, 1080), (0,0), path_dir + "images/sprites/mi/mi_dontlike_summer.png"), im.matrix.tint(0.94, 0.82, 1.0) ),
+    "persistent.sprite_time=='night'", im.MatrixColor( im.Composite((900, 1080), (0,0), path_dir + "images/sprites/mi/mi_dontlike_summer.png"), im.matrix.tint(0.63, 0.78, 0.82) ),
+    True, im.Composite((900, 1080), (0,0), path_dir + "images/sprites/mi/mi_dontlike_summer.png") )
+
+    image mi happy summer = ConditionSwitch(
+    "persistent.sprite_time=='sunset'", im.MatrixColor( im.Composite((900, 1080), (0,0), path_dir + "images/sprites/mi/mi_happy_summer.png"), im.matrix.tint(0.94, 0.82, 1.0) ),
+    "persistent.sprite_time=='night'", im.MatrixColor( im.Composite((900, 1080), (0,0), path_dir + "images/sprites/mi/mi_happy_summer.png"), im.matrix.tint(0.63, 0.78, 0.82) ),
+    True, im.Composite((900, 1080), (0,0), path_dir + "images/sprites/mi/mi_happy_summer.png") )
 
     image mi happy summer close = ConditionSwitch(
     "persistent.sprite_time=='sunset'", im.MatrixColor( im.Composite((900, 1080), (0,0), path_dir + "images/sprites/mi/mi_happy_summer_close.png"), im.matrix.tint(0.94, 0.82, 1.0) ),
