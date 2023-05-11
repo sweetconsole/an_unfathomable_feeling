@@ -46,6 +46,8 @@ init:
     image int_musclub_sunset = path_dir + "images/bg/int_musclub_sunset.jpg"
     image int_old_building_hatch = path_dir + "images/bg/int_old_building_hatch.jpg"
 
+    image uv_background = path_dir + "images/bg/uv_background.jpg"
+
     image campfire = path_dir + "images/cg/campfire.jpg"
     image day2_breakfast = path_dir + "images/cg/day2_breakfast.jpg"
     image daytime_sky = path_dir + "images/cg/daytime_sky.jpg"
