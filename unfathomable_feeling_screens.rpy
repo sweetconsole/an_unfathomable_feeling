@@ -75,6 +75,8 @@ init 2:
                     idle path_dir + "images/menu/prev/" + item[0]
                     action SetVariable("img_now", path_dir + "images/" + gallery_type + item[0]), Show("unfathomable_feeling_screen_img_now", transition=dissolve)
                 else:
+                    xpos gallery_position[key][0]
+                    ypos gallery_position[key][1]
                     idle path_dir + "images/menu/prev/ext_shower_room.jpg"
                     
         # imagebutton:

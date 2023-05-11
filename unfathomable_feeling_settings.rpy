@@ -2,11 +2,19 @@
 init:
     $ path_dir = "mods/an_unfathomable_feeling/"
 
-    $ an_unfathomable_feeling_slow_dance = path_dir + "music/Scorpions_Maybe_I_Maybe_You.ogg"
-    $ an_unfathomable_feeling_sfx_jump_into_hole = path_dir + "sounds/sfx_jump_into_hole.ogg" 
+    $ ambience_camp_center_rain = path_dir + "sounds/ambience/ambience_camp_center_rain.ogg"
+    $ ambience_lake_shore_rain = path_dir + "sounds/ambience/ambience_lake_shore_rain.ogg"
+    $ ambience_lake_shore_rainfall = path_dir + "sounds/ambience/ambience_lake_shore_rainfall.ogg"
 
+    $ an_unfathomable_feeling_slow_dance = path_dir + "sounds/music/Scorpions_Maybe_I_Maybe_You.ogg"
+
+    $ an_unfathomable_feeling_sfx_jump_into_hole = path_dir + "sounds/sfx/sfx_jump_into_hole.ogg" 
+
+    image ext_beach_water_day = path_dir + "images/bg/ext_beach_water_day.jpg"
+    image ext_beach_water_sunset = path_dir + "images/bg/ext_beach_water_day.jpg"
     image ext_boathouse_sunset = path_dir + "images/bg/ext_boathouse_sunset.jpg"
     image ext_bus_sunset = path_dir + "images/bg/ext_bus_sunset.jpg"
+    image ext_bush_sunset = path_dir + "images/bg/ext_bush_sunset.jpg"
     image ext_house_male_day = path_dir + "images/bg/ext_house_male_day.jpg"
     image ext_house_male_sunset = path_dir + "images/bg/ext_house_male_sunset.jpg"
     image ext_house_male_night = path_dir + "images/bg/ext_house_male_night.jpg"
@@ -14,6 +22,7 @@ init:
     image ext_house_of_un_night = path_dir + "images/bg/ext_house_of_un_night.jpg"
     image ext_house_of_un_sunset = path_dir + "images/bg/ext_house_of_un_sunset.jpg"
     image ext_houses_night = path_dir + "images/bg/ext_houses_night.jpg"
+    image ext_musclub_rain = path_dir + "images/bg/ext_musclub_rain.jpg"
     image ext_musclub_night = path_dir + "images/bg/ext_music_club_night.jpg"
     image ext_musclub_sunset = path_dir + "images/bg/ext_music_club_sunset.jpg"
     image ext_music_club_veranda_day = path_dir + "images/bg/ext_music_club_veranda_day.jpg"
@@ -32,16 +41,19 @@ init:
     image int_house_male_day = path_dir + "images/bg/int_house_male_day.jpg"
     image int_house_male_night = path_dir + "images/bg/int_house_male_night.jpg"
     image int_house_male_sunset = path_dir + "images/bg/int_house_male_sunset.jpg"
+    image int_musclub_rain = path_dir + "images/bg/int_musclub_rain.jpg"
     image int_musclub_sunset = path_dir + "images/bg/int_musclub_sunset.jpg"
     image int_old_building_hatch = path_dir + "images/bg/int_old_building_hatch.jpg"
 
     image campfire = path_dir + "images/cg/campfire.jpg"
     image day2_breakfast = path_dir + "images/cg/day2_breakfast.jpg"
     image daytime_sky = path_dir + "images/cg/daytime_sky.jpg"
+    image me_mi_beach = path_dir + "images/cg/me_mi_beach.jpg"
     image me_mi_dance = path_dir + "images/cg/me_mi_dance.jpg"
     image me_mi_guitar_musclub = path_dir + "images/cg/me_mi_guitar_musclub.jpg"
     image me_mi_piano_musclub = path_dir + "images/cg/me_mi_piano_musclub.jpg"
     image me_mirror_normal = path_dir + "images/cg/me_mirror_normal.jpg"
+    image mi_boat = im.MatrixColor( im.Composite((1920, 1080), (0,0), path_dir + "images/cg/mi_boat.jpg"), im.matrix.tint(0.94, 0.82, 1.0) )
     image mi_piano_musclub = path_dir + "images/cg/mi_piano_musclub.jpg"
     image un_crazy_blood = path_dir + "images/cg/un_crazy_blood.jpg"
     image un_crazy_torch = path_dir + "images/cg/un_crazy_torch.jpg"
@@ -83,6 +95,25 @@ init:
     "persistent.sprite_time=='sunset'", im.MatrixColor( im.Composite((900, 1080), (0,0), path_dir + "images/sprites/mi/mi_cry_pionerr_close.png"), im.matrix.tint(0.94, 0.82, 1.0) ),
     "persistent.sprite_time=='night'", im.MatrixColor( im.Composite((900, 1080), (0,0), path_dir + "images/sprites/mi/mi_cry_pionerr_close.png"), im.matrix.tint(0.63, 0.78, 0.82) ),
     True, im.Composite((900, 1080), (0,0), path_dir + "images/sprites/mi/mi_cry_pionerr_close.png") )
+
+    # Summer
+
+    image mi normal summer = ConditionSwitch(
+    "persistent.sprite_time=='sunset'", im.MatrixColor( im.Composite((900, 1080), (0,0), path_dir + "images/sprites/mi/mi_normal_summer.png"), im.matrix.tint(0.94, 0.82, 1.0) ),
+    "persistent.sprite_time=='night'", im.MatrixColor( im.Composite((900, 1080), (0,0), path_dir + "images/sprites/mi/mi_normal_summer.png"), im.matrix.tint(0.63, 0.78, 0.82) ),
+    True, im.Composite((900, 1080), (0,0), path_dir + "images/sprites/mi/mi_normal_summer.png") )
+
+    image mi grin summer = ConditionSwitch(
+    "persistent.sprite_time=='sunset'", im.MatrixColor( im.Composite((900, 1080), (0,0), path_dir + "images/sprites/mi/mi_grin_summer.png"), im.matrix.tint(0.94, 0.82, 1.0) ),
+    "persistent.sprite_time=='night'", im.MatrixColor( im.Composite((900, 1080), (0,0), path_dir + "images/sprites/mi/mi_grin_summer.png"), im.matrix.tint(0.63, 0.78, 0.82) ),
+    True, im.Composite((900, 1080), (0,0), path_dir + "images/sprites/mi/mi_grin_summer.png") )
+
+    image mi happy summer close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'", im.MatrixColor( im.Composite((900, 1080), (0,0), path_dir + "images/sprites/mi/mi_happy_summer_close.png"), im.matrix.tint(0.94, 0.82, 1.0) ),
+    "persistent.sprite_time=='night'", im.MatrixColor( im.Composite((900, 1080), (0,0), path_dir + "images/sprites/mi/mi_happy_summer_close.png"), im.matrix.tint(0.63, 0.78, 0.82) ),
+    True, im.Composite((900, 1080), (0,0), path_dir + "images/sprites/mi/mi_happy_summer_close.png") )
+
+    # Blue Dress
 
     image mi dontlike bluedress = ConditionSwitch(
     "persistent.sprite_time=='sunset'", im.MatrixColor( im.Composite((900, 1080), (0,0), path_dir + "images/sprites/mi/mi_1_blue_dress_dontlike.png"), im.matrix.tint(0.94, 0.82, 1.0) ),

@@ -10,10 +10,10 @@ init 3:
 
     default gallery = {
         "cg": [[
-                ["day2_breakfast.jpg", True],
-                ["daytime_sky.jpg", True],
-                ["me_mi_dance.jpg", True],
-                ["me_mi_guitar_musclub.jpg", True]
+                ["day2_breakfast.jpg", False],
+                ["daytime_sky.jpg", False],
+                ["me_mi_dance.jpg", False],
+                ["me_mi_guitar_musclub.jpg", False]
             ],[
                 ["me_mirror_normal.jpg", True],
                 ["me_mi_piano_musclub.jpg", True],
