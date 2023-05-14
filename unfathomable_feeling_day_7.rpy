@@ -342,4 +342,6 @@ label unfathomable_feeling_day_6:
     uv "Из этого лагеря можно выбраться, достаточно сесть в автобус..."
     "Она подмигнула мне и растворилась."
 
+    stop ambience
+
     jump unfathomable_feeling_epilogue

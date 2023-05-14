@@ -13,8 +13,7 @@ init 2:
             background "#000"
             text_size 65
             text_font path_dir + "fonts/balloon_xbd.ttf"
-            # action Hide("unfathomable_feeling_menu", transition=dissolve), Jump("unfathomable_feeling_prologue")
-            action Hide("unfathomable_feeling_menu", transition=dissolve), Jump("unfathomable_feeling_epilogue")
+            action Hide("unfathomable_feeling_menu", transition=dissolve), Jump("unfathomable_feeling_prologue")
 
         textbutton "Галерея":
             xpos 160

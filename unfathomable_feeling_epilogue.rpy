@@ -81,6 +81,9 @@ label unfathomable_feeling_epilogue_2:
     $ renpy.pause(1.5, hard=True)
 
     scene int_kitchen
+
+    $ gallery["bg"][1][2][1] = True
+
     show mi normal apron
 
     play ambience ambience_lake_shore_rainfall loop fadein 4
@@ -107,6 +110,9 @@ label unfathomable_feeling_epilogue_2:
     "Мику, немного постояв на месте, вернулась к плите. Она пересыпала содержимое сковородки на две тарелки и пошла в комнату."
 
     scene int_flat_night 
+
+    $ gallery["bg"][3][2][1] = True
+
     show mi normal apron at left
     show sm normal shirt at right
     with dissolve
