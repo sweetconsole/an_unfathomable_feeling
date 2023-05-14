@@ -740,7 +740,7 @@ label unfathomable_feeling_day_3:
     
     scene me_mi_dance
 
-    play music an_unfathomable_feeling_slow_dance fadein 2
+    play music scorpions_maybe_i_maybe_you fadein 2
 
     hide blink
     show unblink

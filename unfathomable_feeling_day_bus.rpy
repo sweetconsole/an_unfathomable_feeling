@@ -15,7 +15,7 @@ label unfathomable_feeling_day_bus:
 
     play music music_list["a_promise_from_distant_days"] loop fadein 2
 
-    pause(1.5)
+    $ renpy.pause(1.5, hard=True)
     $ set_mode_nvl()
     nvl show dissolve
     """
@@ -35,7 +35,7 @@ label unfathomable_feeling_day_bus:
     """
 
     nvl hide dissolve
-    pause(1)
+    $ renpy.pause(1.0, hard=True)
     $ set_mode_nvl()
 
     """
@@ -50,7 +50,7 @@ label unfathomable_feeling_day_bus:
     """
 
     nvl hide dissolve
-    pause(1.5)
+    $ renpy.pause(1.5, hard=True)
     $ set_mode_adv()
 
     jump unfathomable_feeling_day_5

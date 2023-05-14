@@ -760,7 +760,7 @@ label unfathomable_feeling_day_4:
 
     scene int_mine with fade
 
-    play sound an_unfathomable_feeling_sfx_jump_into_hole
+    play sound sfx_jump_into_hole
 
     play music music_list["into_the_unknown"] loop fadein 2
     play ambience ambience_catacombs_stones fadein 4

@@ -13,27 +13,18 @@ init 2:
             background "#000"
             text_size 65
             text_font path_dir + "fonts/balloon_xbd.ttf"
-            action Hide("unfathomable_feeling_menu", transition=dissolve), Jump("unfathomable_feeling_prologue")
+            # action Hide("unfathomable_feeling_menu", transition=dissolve), Jump("unfathomable_feeling_prologue")
+            action Hide("unfathomable_feeling_menu", transition=dissolve), Jump("unfathomable_feeling_epilogue")
 
         textbutton "Галерея":
             xpos 160
-            ypos 380
+            ypos 420
             text_idle_color "#fff"
             text_hover_color "#aaa"
             background "#000"
             text_size 65
             text_font path_dir + "fonts/balloon_xbd.ttf"
             action ToggleScreen("unfathomable_feeling_gallery_quest", transition=fade)
-
-        textbutton "Достижения":
-            xpos 160
-            ypos 540
-            text_idle_color "#fff"
-            text_hover_color "#aaa"
-            background "#000"
-            text_size 65
-            text_font path_dir + "fonts/balloon_xbd.ttf"
-            action Show("fawfawf", transition=dissolve)
 
         textbutton "Выход":
             xpos 160
@@ -73,23 +64,11 @@ init 2:
                     xpos gallery_position[key][0]
                     ypos gallery_position[key][1]
                     idle path_dir + "images/menu/prev/" + item[0]
-                    action SetVariable("img_now", path_dir + "images/" + gallery_type + item[0]), Show("unfathomable_feeling_screen_img_now", transition=dissolve)
+                    action SetVariable("img_now", path_dir + "images/" + gallery_type + "/" + item[0]), Show("unfathomable_feeling_screen_img_now", transition=dissolve)
                 else:
                     xpos gallery_position[key][0]
                     ypos gallery_position[key][1]
-                    idle path_dir + "images/menu/prev/ext_shower_room.jpg"
-                    
-        # imagebutton:
-        #     xpos 850
-        #     ypos 180
-        #     idle path_dir + "images/menu/arrows/up.png"
-        #     action SetVariable("gallery_page", gallery_page - 1)
-
-        # imagebutton:
-        #     xpos 850
-        #     ypos 760
-        #     idle path_dir + "images/menu/arrows/bottom.png"
-        #     action SetVariable("gallery_page", gallery_page + 1)
+                    idle path_dir + "images/menu/photographie-empty.jpg"
 
         for page in range(len(gallery[gallery_type])):
             if gallery_page != page:
