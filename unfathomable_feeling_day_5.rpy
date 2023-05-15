@@ -245,9 +245,9 @@ label unfathomable_feeling_day_5:
 
     "Полуденное солнце уже полностью вступило на пост и начало аккуратными движениями превращать лагерь в духовку, а всех, кто не нашёл спасительной тени – в угольки. Но даже оно не останавливало толпу гогочущих пионеров на пути к столовой."
 
-    scene int_dining_hall_people_day with dissolve
-
+    scene int_dining_hall_people_day
     show mi normal pioneer at left
+    with dissolve
 
     play music music_list["she_is_kind"] loop fadein 2
     play ambience ambience_dining_hall_full loop fadein 4
@@ -377,8 +377,7 @@ label unfathomable_feeling_day_5:
 
     show el serious pioneer with dspr
 
-    el "Ну уж нет, вызвался забирать сахар."
-    "Забирай полностью."
+    el "Ну уж нет, вызвался забирать сахар. Забирай полностью."
     
     show dv normal pioneer with dspr
 
@@ -596,6 +595,8 @@ label unfathomable_feeling_day_5:
     
     scene ext_beach_water_day with dissolve
 
+    $ gallery["bg"][2][3][1] = True
+
     "Рывком я оказался в воде. Следом за мной подбежала Мику в прекрасном купальнике цвета морской волны, который идеально дополнял её фигуру." 
     "Она остановилась у реки, и начала неторопливо заходить в воду, ворча про то что она ледяная. Я не смог удержаться и облил её тело водой."
 
@@ -610,6 +611,8 @@ label unfathomable_feeling_day_5:
     $ night_time()
 
     scene campfire
+
+    $ gallery["cg"][2][1][1] = True
 
     play sound sfx_forest_fireplace loop fadein 4
     play music music_list["mystery_girl_v2"] loop fadein 2

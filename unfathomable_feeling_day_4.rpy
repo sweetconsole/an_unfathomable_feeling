@@ -28,18 +28,17 @@ label unfathomable_feeling_day_4:
 
     scene un_crazy_torch
 
+    $ gallery["cg"][1][3][1] = True
+
     hide blink
     show unblink
     pause(1.5)
     window show
     
     "Я с трудом обернулся и увидел Лену, держащую в руке факел. Её лицо было обезображено нечеловеческой гримасой."
-
-    un "А я вот за тобой пришла."
-    
     "Это существо напоминало мне больше тех \"Ульян\"..."
     
-    un "А я за тобой!"
+    un "А я вот за тобой пришла."
     
     me "Ты... ты... кто ты?"
     "Выдавил я из себя."
@@ -75,6 +74,8 @@ label unfathomable_feeling_day_4:
     pause(1.5)
 
     scene un_crazy_blood
+
+    $ gallery["cg"][1][2][1] = True
 
     hide blink
     show unblink
@@ -132,6 +133,8 @@ label unfathomable_feeling_day_4:
     "Мои веки захлопнулись и я ощутил слабость во всём теле."
 
     scene daytime_sky  
+
+    $ gallery["cg"][0][1][1] = True
 
     play music music_list["goodbye_home_shores"] loop fadein 2
     play ambience ambience_camp_entrance_day loop fadein 4
@@ -192,7 +195,7 @@ label unfathomable_feeling_day_4:
 
     "Живот предательски заурчал."
     
-    show mi happy pioneer with dspr
+    show mi smile pioneer with dspr
 
     mi "А ты уверен в этом?"
     "Она усмехнулась и тряхнула пакетик в своей руке."
@@ -259,6 +262,8 @@ label unfathomable_feeling_day_4:
     "Мы просидели так до обеда. Мику научила меня парочке новых аккордов и мелодий, а моя игра на гитаре сопровождалась ангельским пением девушки." 
     "Такие моменты хочется растянуть надолго. Они позволяют тебе собраться с мыслями, отвлечься от всех проблем, и побыть с тем, кто тебе дорог."
     
+    stop music
+
     play sound sfx_miku_song_learn2 loop
 
     "Мику дремала на моём плече, пока я учил новый перебор." 
@@ -303,6 +308,8 @@ label unfathomable_feeling_day_4:
 
     scene int_dva_dish_day
 
+    $ gallery["bg"][2][2][1] = True
+
     play music music_list["eat_some_trouble"] loop fadein 2
     play ambience ambience_dining_hall_full loop fadein 4
 
@@ -318,8 +325,7 @@ label unfathomable_feeling_day_4:
     show mt normal pioneer at center
     show el normal pioneer at right
     with dissolve
-    
-    
+        
     "Пожелав друг другу приятного аппетита, мы приступили к трапезе. Спустя несколько секунд к нам подсела Ольга Дмитриевна и Электроник."
     
     me "Добрый день."
@@ -671,6 +677,8 @@ label unfathomable_feeling_day_4:
     "Я отодвинул пару слоев покрытия и увидел люк. Судя по следам на крышке, его недавно открывали." 
 
     scene int_old_building_hatch with fade
+
+    $ gallery["bg"][1][1][1] = True
     
     "Я навалил на него всем весом, и крышка поддалась. Я подозвал Мику, спустился первым, проверив ступени и дал добро девушке." 
     
@@ -987,8 +995,9 @@ label unfathomable_feeling_day_4:
     "Он запнулся."
     
     me "Куклы же не могли возникнуть из ниоткуда, верно? А значит, у каждой из них есть прототип."
-    "Реальная девушка, которая живет с такими же куклами. Я уже долго здесь, и научился перемещаться между мирами."
-    "И, если ты хочешь, я могу перенести тебя к реальной Мику до конца смены."
+
+    pi "Реальная девушка, которая живет с такими же куклами. Я уже долго здесь, и научился перемещаться между мирами."
+    pi "И, если ты хочешь, я могу перенести тебя к реальной Мику до конца смены."
     
     "Я сразу раскусил его тон, в котором было чётко слышно \"но\"."
     me "Что ты хочешь за это?"

@@ -13,6 +13,8 @@ label unfathomable_feeling_day_bus:
 
     scene int_bus_rain_sunset with fade
 
+    $ gallery["bg"][0][3][1] = True
+
     play music music_list["a_promise_from_distant_days"] loop fadein 2
 
     $ renpy.pause(1.5, hard=True)

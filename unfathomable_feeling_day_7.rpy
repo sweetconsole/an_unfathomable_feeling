@@ -1,4 +1,4 @@
-label unfathomable_feeling_day_6:
+label unfathomable_feeling_day_7:
     window hide
 
     $ renpy.pause(1.0, hard=True)
