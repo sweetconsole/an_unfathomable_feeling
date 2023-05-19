@@ -57,9 +57,9 @@ init 2:
 
         add path_dir + "images/menu/gallery.jpg"
 
-        for key, item in enumerate(gallery[gallery_type][gallery_page]):
+        for key, item in enumerate(persistent.gallery[gallery_type][gallery_page]):
             imagebutton:
-                if item[1]:
+                if item[1] == True:
                     xpos gallery_position[key][0]
                     ypos gallery_position[key][1]
                     idle path_dir + "images/menu/prev/" + item[0]
@@ -69,7 +69,7 @@ init 2:
                     ypos gallery_position[key][1]
                     idle path_dir + "images/menu/photographie-empty.jpg"
 
-        for page in range(len(gallery[gallery_type])):
+        for page in range(len(persistent.gallery[gallery_type])):
             if gallery_page != page:
                 imagebutton:
                     xpos 875

@@ -189,7 +189,7 @@ label unfathomable_feeling_day_2:
 
     scene day2_breakfast with fade
 
-    $ gallery["cg"][0][0][1] = True
+    $ unfathomable_feeling_open_image_gallery("cg", 1, 1)
 
     "Мы приступили к завтраку."
     "Пища которую я ел здесь не отличалась вкусом, но была питательной, всяко лучше той, что ел я дома, хотя она и не отличалась высокой сложностью приготовления."
@@ -272,7 +272,7 @@ label unfathomable_feeling_day_2:
 
     scene me_mi_guitar_musclub with dissolve
 
-    $ gallery["cg"][0][3][1] = True
+    $ unfathomable_feeling_open_image_gallery("cg", 1, 4)
 
     "Следующие несколько часов прошли как один миг. Она рассказывала мне о моих ошибках и поправляла. Мои аккорды стали звонче, бои ритмичнее. И что самое удивительное, я не уставал от занятий."
     "Я просто наслаждался её компанией. Иногда я хитрил, специально совершал ошибки, что бы она приобнимала меня и клала свои пальцы на мои."
@@ -584,7 +584,7 @@ label unfathomable_feeling_day_2:
 
     scene ext_storage_day
 
-    $ gallery["bg"][0][2][1] = True
+    $ unfathomable_feeling_open_image_gallery("bg", 1, 3)
 
     hide blink
     show unblink

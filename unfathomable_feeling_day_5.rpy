@@ -595,7 +595,7 @@ label unfathomable_feeling_day_5:
     
     scene ext_beach_water_day with dissolve
 
-    $ gallery["bg"][2][3][1] = True
+    $ unfathomable_feeling_open_image_gallery("bg", 3, 4)
 
     "Рывком я оказался в воде. Следом за мной подбежала Мику в прекрасном купальнике цвета морской волны, который идеально дополнял её фигуру." 
     "Она остановилась у реки, и начала неторопливо заходить в воду, ворча про то что она ледяная. Я не смог удержаться и облил её тело водой."
@@ -612,7 +612,7 @@ label unfathomable_feeling_day_5:
 
     scene campfire
 
-    $ gallery["cg"][2][1][1] = True
+    $ unfathomable_feeling_open_image_gallery("cg", 3, 2)
 
     play sound sfx_forest_fireplace loop fadein 4
     play music music_list["mystery_girl_v2"] loop fadein 2

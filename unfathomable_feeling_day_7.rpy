@@ -46,7 +46,7 @@ label unfathomable_feeling_day_7:
     me "Конечно доброе!"
     "Ответил я ей."
     
-    scene mi_boat with fade
+    scene mi_boat_day with fade
 
     "Я продолжил грести, а Мику начала одеваться, натягивая форму поверх голого тела. Спустя пару минут мы причалили к пристани."
     
@@ -138,6 +138,7 @@ label unfathomable_feeling_day_7:
     me "Точно. Ладно, давай переоденемся и через пару минут у входа."
     "Сказал я и вышел из домика, тут же завернув в соседний."
 
+    window hide
     scene ext_house_of_un_day with dissolve
 
     $ renpy.pause(1.0, hard=True)
@@ -151,6 +152,7 @@ label unfathomable_feeling_day_7:
     $ renpy.pause(1.0, hard=True)
 
     scene int_house_male_day with dissolve
+    window show
 
     "\"Прощай моя обитель...\" - мысленно произнёс я, проводя пальцами по ободранной обшивке двери шкафа. Достав оттуда свитер и пальто, я перекинул их через плечо и направился к кровати."
     
@@ -201,7 +203,7 @@ label unfathomable_feeling_day_7:
 
     scene ext_musclub_rain with fade
 
-    play ambience_lake_shore_rainfall loop fadein 4
+    play ambience ambience_lake_shore_rainfall loop fadein 4
 
     "Дождь всё усиливался, намереваясь превратиться в настоящий ливень. Мы ускорили шаг, и вскоре перед нами возникло здание музыкального клуба. Щелкнув замком, дверь нехотя отворилась, а поток ледяного ветра загнал нас внутрь."
     
@@ -311,9 +313,13 @@ label unfathomable_feeling_day_7:
 
     scene int_bus_window_view with dissolve
 
+    $ unfathomable_feeling_open_image_gallery("bg", 4, 2)
+
     "Я снова взвалил сумку Мику себе на плечо и обошёл автобус, поставив чемодан в багажное отделение."
 
     scene epilogue_inbus_1 with dissolve
+
+    $ unfathomable_feeling_open_image_gallery("bg", 3, 3)
 
     "Через пару минут я уже сидел рядом с любимой и наблюдал, как она разглядывает зелень, пролетающую мимо автобуса."
     "Она начала весело говорить о том, что нас ждёт в реальном мире, как она однажды приготовит мне яичницу на завтрак и мы заживём спокойной, размеренной жизнью."
@@ -333,15 +339,18 @@ label unfathomable_feeling_day_7:
     "Прошептал я."
 
     scene uv_background
-    show uv grin 
+    show uv normal 
     with dissolve
 
     "Всё, глаза невольно закрываются, и я почему-то вспомнил образ кошко-девочки."
     "Она подошла ко мне и повторила сказанное ранее:"
 
+    show uv grin with dspr
+
     uv "Из этого лагеря можно выбраться, достаточно сесть в автобус..."
     "Она подмигнула мне и растворилась."
 
     stop ambience
+    stop sound
 
     jump unfathomable_feeling_epilogue

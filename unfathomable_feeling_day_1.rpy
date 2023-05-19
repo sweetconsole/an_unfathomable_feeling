@@ -670,7 +670,7 @@ label unfathomable_feeling_day_1:
 
     scene me_mi_piano_musclub
 
-    $ gallery["cg"][1][1][1] = True
+    $ unfathomable_feeling_open_image_gallery("cg", 2, 2)
 
     hide blink
     show unblink
@@ -702,7 +702,7 @@ label unfathomable_feeling_day_1:
 
     scene mi_piano_musclub with fade
 
-    $ gallery["cg"][2][0][1] = True
+    $ unfathomable_feeling_open_image_gallery("cg", 3, 1)
 
     "Она села за рояль и сыграла не очень сложную, но очень красивую мелодию."
     "Я просто наблюдал за изящными движениями её пальцев, которые ловко прыгали с клавиши на клавишу, отыгрывая музыку идеально."
@@ -788,7 +788,7 @@ label unfathomable_feeling_day_1:
 
     scene int_house_male_day with fade
 
-    $ gallery["bg"][1][0][1] = True
+    $ unfathomable_feeling_open_image_gallery("bg", 2, 1)
 
     "Я быстро разложил свои вещи по полкам, и отправился на прогулку."
  
@@ -834,7 +834,7 @@ label unfathomable_feeling_day_1:
     play music music_list["what_do_you_think_of_me"] loop fadein 2
 
     "Я гулял вплоть до захода солнца и уже когда возвращался домой увидел улыбающийся силуэт в пионерской форме среди леса."
-    "«Наверное показалось», — подумал я и забрел в свой домик."
+    "«Наверное показалось» — подумал я и забрел в свой домик."
 
     scene int_house_male_sunset
 
@@ -850,7 +850,7 @@ label unfathomable_feeling_day_1:
 
     scene me_mirror_normal with dissolve
 
-    $ gallery["cg"][1][0][1] = True
+    $ unfathomable_feeling_open_image_gallery("cg", 2, 1)
 
     "Я понял что сделать с этим ничего не смогу, и решил смириться."
 

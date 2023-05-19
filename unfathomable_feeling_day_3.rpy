@@ -577,8 +577,8 @@ label unfathomable_feeling_day_3:
     pause(1.5)
     
     scene ext_shower_room
-
-    $ gallery["bg"][0][1][1] = True
+    
+    $ unfathomable_feeling_open_image_gallery("bg", 1, 2)
 
     play music music_list["farewell_to_the_past_full"] loop fadein 2
     play ambience ambience_forest_day loop fadein 4
@@ -748,7 +748,7 @@ label unfathomable_feeling_day_3:
     
     scene me_mi_dance
 
-    $ gallery["cg"][0][2][1] = True
+    $ unfathomable_feeling_open_image_gallery("cg", 1, 3)
 
     play music scorpions_maybe_i_maybe_you fadein 2
 

@@ -28,7 +28,7 @@ label unfathomable_feeling_day_4:
 
     scene un_crazy_torch
 
-    $ gallery["cg"][1][3][1] = True
+    $ unfathomable_feeling_open_image_gallery("cg", 2, 4)
 
     hide blink
     show unblink
@@ -75,7 +75,7 @@ label unfathomable_feeling_day_4:
 
     scene un_crazy_blood
 
-    $ gallery["cg"][1][2][1] = True
+    $ unfathomable_feeling_open_image_gallery("cg", 2, 3)
 
     hide blink
     show unblink
@@ -134,7 +134,7 @@ label unfathomable_feeling_day_4:
 
     scene daytime_sky  
 
-    $ gallery["cg"][0][1][1] = True
+    $ unfathomable_feeling_open_image_gallery("cg", 1, 2)
 
     play music music_list["goodbye_home_shores"] loop fadein 2
     play ambience ambience_camp_entrance_day loop fadein 4
@@ -308,7 +308,7 @@ label unfathomable_feeling_day_4:
 
     scene int_dva_dish_day
 
-    $ gallery["bg"][2][2][1] = True
+    $ unfathomable_feeling_open_image_gallery("bg", 3, 3)
 
     play music music_list["eat_some_trouble"] loop fadein 2
     play ambience ambience_dining_hall_full loop fadein 4
@@ -678,7 +678,7 @@ label unfathomable_feeling_day_4:
 
     scene int_old_building_hatch with fade
 
-    $ gallery["bg"][1][1][1] = True
+    $ unfathomable_feeling_open_image_gallery("bg", 2, 3)
     
     "Я навалил на него всем весом, и крышка поддалась. Я подозвал Мику, спустился первым, проверив ступени и дал добро девушке." 
     

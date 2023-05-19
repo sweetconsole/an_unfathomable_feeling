@@ -82,11 +82,11 @@ label unfathomable_feeling_epilogue_2:
 
     scene int_kitchen
 
-    $ gallery["bg"][1][2][1] = True
+    $ unfathomable_feeling_open_image_gallery("bg", 2, 3)
 
     show mi normal apron
 
-    play ambience ambience_lake_shore_rainfall loop fadein 4
+    stop ambience
 
     hide blink
     show unblink
@@ -111,7 +111,7 @@ label unfathomable_feeling_epilogue_2:
 
     scene int_flat_night 
 
-    $ gallery["bg"][3][2][1] = True
+    $ unfathomable_feeling_open_image_gallery("bg", 4, 3)
 
     show mi normal apron at left
     show sm normal shirt at right
@@ -128,7 +128,7 @@ label unfathomable_feeling_epilogue_2:
     
     mi "Но ты даже не попробовал!"
     
-    show sm grin shir with dspr
+    show sm grin shirt with dspr
 
     me "Я и так это знаю. Но ладно, только ради тебя."
     "Юноша усмехнулся, после чего принялся за завтрак."
