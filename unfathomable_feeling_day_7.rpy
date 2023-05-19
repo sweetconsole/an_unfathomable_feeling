@@ -319,7 +319,7 @@ label unfathomable_feeling_day_7:
 
     scene epilogue_inbus_1 with dissolve
 
-    $ unfathomable_feeling_open_image_gallery("bg", 3, 3)
+    $ unfathomable_feeling_open_image_gallery("cg", 3, 3)
 
     "Через пару минут я уже сидел рядом с любимой и наблюдал, как она разглядывает зелень, пролетающую мимо автобуса."
     "Она начала весело говорить о том, что нас ждёт в реальном мире, как она однажды приготовит мне яичницу на завтрак и мы заживём спокойной, размеренной жизнью."

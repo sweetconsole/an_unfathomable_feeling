@@ -678,7 +678,7 @@ label unfathomable_feeling_day_4:
 
     scene int_old_building_hatch with fade
 
-    $ unfathomable_feeling_open_image_gallery("bg", 2, 3)
+    $ unfathomable_feeling_open_image_gallery("bg", 2, 2)
     
     "Я навалил на него всем весом, и крышка поддалась. Я подозвал Мику, спустился первым, проверив ступени и дал добро девушке." 
     

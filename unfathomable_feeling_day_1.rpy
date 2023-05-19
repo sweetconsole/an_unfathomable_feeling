@@ -788,6 +788,7 @@ label unfathomable_feeling_day_1:
 
     scene int_house_male_day with fade
 
+    $ unfathomable_feeling_open_image_gallery("bg", 1, 1)
     $ unfathomable_feeling_open_image_gallery("bg", 2, 1)
 
     "Я быстро разложил свои вещи по полкам, и отправился на прогулку."
