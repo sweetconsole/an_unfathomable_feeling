@@ -358,8 +358,8 @@ label unfathomable_feeling_day_6:
     me "Всё хорошо?"
     "Мику утвердительно кивнула в ответ и в клуб зашла Алиса."
     
-    show mi normal pioneer at left
-    show dv grin pioneer2 at right
+    show dv grin pioneer2 at left
+    show mi normal pioneer
     with dissolve
 
     dv "Привет, голубки, готовы?"
