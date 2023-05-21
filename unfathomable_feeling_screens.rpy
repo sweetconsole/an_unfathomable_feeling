@@ -17,7 +17,7 @@ init 2:
 
         textbutton "Галерея":
             xpos 160
-            ypos 420
+            ypos 400
             text_idle_color "#fff"
             text_hover_color "#aaa"
             background "#000"
@@ -27,7 +27,7 @@ init 2:
 
         textbutton "Выход":
             xpos 160
-            ypos 620
+            ypos 580
             text_idle_color "#fff"
             text_hover_color "#aaa"
             background "#000"

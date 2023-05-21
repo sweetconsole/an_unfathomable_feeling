@@ -119,6 +119,7 @@ label unfathomable_feeling_day_6:
 
     $ unfathomable_feeling_open_image_gallery("bg", 3, 1)
 
+    play music music_list["goodbye_home_shores"] loop fadein 2
     play ambience ambience_dining_hall_empty loop fadein 4
 
     "В столовой оказалось несколько пионеров и заспанная повариха. Я подошёл к ней. Интересно, что они могли успеть приготовить в такую рань?"
@@ -146,6 +147,7 @@ label unfathomable_feeling_day_6:
     
     scene int_library_day with dissolve
 
+    play music music_list["silhouette_in_sunset"] loop fadein 2
     play ambience ambience_int_cabin_day loop fadein 4
     
     "В помещении, у правой стенки, на диване находилась Женя и, откровенно говоря, спала. Бедняжка, даже до выхода не доковыляла."
@@ -163,6 +165,8 @@ label unfathomable_feeling_day_6:
     "Выждав время, пока девушка уйдёт на значительное расстояние, я нырнул на соседнюю тропинку, и «как бы невзначай» столкнулся с ней. Она не поздоровалась со мной, да и вообще, её лицо не выражало ни единой эмоции. Я лишь ускорил шаг."
     
     scene ext_houses_day with dissolve
+
+    play music music_list["confession_oboe"] loop fadein 2
 
     "Солнце уже отлепилось от горизонта, и прекрасный пейзаж янтарных облаков был утрачен. Его место занял голубой, с отливами розового небосвод с редкими облаками. Ветер снова притих, будто готовясь с силами для решающего удара."
     
@@ -251,6 +255,8 @@ label unfathomable_feeling_day_6:
     show mi monochrome
     with dissolve
 
+    play music music_list["farewell_to_the_past_full"] loop fadein 2
+
     "Ползунки «Контрастность», «Насыщенность» и «Яркость» окружающего мира поползли влево... {w}Всё вокруг меня потемнело."
     
     me "Почему? Обычно смены длятся по три недели!"
@@ -299,6 +305,8 @@ label unfathomable_feeling_day_6:
     "Она нырнула в подсобку заперев за собой дверь. Я пару раз ударил по ней, а потом обернулся спиной и упал на пол, скользя лопатками по дереву."
 
     hide mi with dissolve
+
+    play music music_list["trapped_in_dreams"] loop fadein 2
     
     me "Что случилось?"
     "Я пытался быть спокойным, но у меня не получалось."
@@ -362,6 +370,8 @@ label unfathomable_feeling_day_6:
     show mi normal pioneer
     with dissolve
 
+    play music music_list["my_daily_life"] loop fadein 2
+
     dv "Привет, голубки, готовы?"
     "Алиса опять усмехнулась, но без надменности и насмешки."
     
@@ -424,7 +434,7 @@ label unfathomable_feeling_day_6:
     with dspr
 
     dv "А потом я тебя встретила, на площади. В плавках."
-    "Мику с Алисой опять захихикали а я покрылся красным. {w}Мда уж... стоит поподробней узнать о том, что же здесь произошло."
+    "Мику с Алисой опять захихикали, а я покрылся красным. {w}Мда уж... стоит поподробней узнать о том, что же здесь произошло."
 
     show mi smile pioneer
     show dv grin pioneer2 
@@ -446,6 +456,7 @@ label unfathomable_feeling_day_6:
     show dv normal pioneer2 at right
     with fade
 
+    play music music_list["reflection_on_water"] loop fadein 2
     play ambience ambience_forest_day loop fadein 4
 
     play sound sfx_dinner_horn_processed volume 0.25
@@ -480,12 +491,14 @@ label unfathomable_feeling_day_6:
 
     "Я не мог не заметить, что Мику была очень радостной, впрочем как обычно. Но сейчас-то у нас была серьёзная проблема, которая не переставала терзать мою душу."
     
-    "Мику, почему ты такая позитивная?"
+    me "Мику, почему ты такая позитивная?"
     "Спросил я, заглянув в её глаза."
     
     show mi smile pioneer with dissolve
 
-    "Потому что, Сема. Если нам с тобой осталось лишь два дня, то зачем тратить их на грусть?"
+    play music music_list["reminiscences"] loop fadein 2
+
+    mi "Потому что, Сёма. Если нам с тобой осталось лишь два дня, то зачем тратить их на грусть?"
     "Она тепло улыбнулась мне, и я тут же позабыл о всех своих проблемах."
     
     "Всё же было в этой девушке что-то необычное, что-то позитивное, выходящее из её беззаботности и разговорчивости. Именно это и притянуло меня к ней, наверно."
@@ -528,6 +541,9 @@ label unfathomable_feeling_day_6:
 
     mi "Музыку люблю, в музыкальную школу хожу... Ходила..."
     "Мику погрустнела."
+
+    play music music_list["i_dont_blame_you"] loop fadein 2
+
     mi "Пока родители не уехали в Японию на пару недель..."
 
     show mi cry pioneer with dspr
@@ -573,6 +589,7 @@ label unfathomable_feeling_day_6:
 
     scene ext_path_sunset with fade
 
+    play music music_list["mystery_girl_v2"] loop fadein 2
     play ambience ambience_forest_evening loop fadein 4
 
     "Я аккуратно ступал по потрескавшейся плитке, наблюдая за опускавшимся солнцем, пока не услышал из леса девичий шёпот."
@@ -632,6 +649,7 @@ label unfathomable_feeling_day_6:
 
     scene ext_boathouse_sunset
 
+    play music music_list["forest_maiden"] loop fadein 2
     play ambience ambience_lake_shore_evening loop fadein 4
 
     hide blink
@@ -705,6 +723,8 @@ label unfathomable_feeling_day_6:
     "Между влюблёнными началась ожесточённая схватка не на жизнь, а на смерть."
 
     scene ext_beach_sunset with fade
+
+    play music music_list["memories"] loop fadein 2
 
     "Уставший Семён сел на берег, окунув ноги в воду и наблюдал за плескавшейся девушкой. Он почувствовал, что его что-то щекочет. "
     "Он опустил свой взор на кристально чистую водную гладь и заметил стайку маленьких рыбок, плавающих возле его ноги и иногда щипающих её."

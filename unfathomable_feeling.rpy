@@ -6,6 +6,9 @@ init 3:
 
 
 label unfathomable_feeling_start:
+    
+    $ unfathomable_feeling_timeskip()
+
     call screen unfathomable_feeling_menu with dissolve
 
     

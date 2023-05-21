@@ -1,11 +1,11 @@
 
 label unfathomable_feeling_epilogue:
-    $ new_chapter(0, u"Непостижимое чувство.\nПролог")
     $ persistent.sprite_time = "day"
     $ prolog_time()
 
     scene int_house_male_day
 
+    play music music_list["door_to_nightmare"] loop fadein 2
     play ambience ambience_int_cabin_day loop fadein 4
 
     $ renpy.pause(1.0, hard=True)
@@ -101,7 +101,7 @@ label unfathomable_feeling_epilogue_2:
 
     "Мику спокойно перемешивала яйца в сковороде, не обращая внимание на окружение."
 
-    play sfx sfx_blow_to_the_glass
+    play sound sfx_blow_to_the_glass
 
     "Внезапно в окно что-то ударилось. Мику аккуратно отложила лопатку и подошла к нему. Тетрадный листок прижимался к стеклу порывами ветра, на нём красивым, чуть ли не каллиграфическим почерком было написано несколько слов: \"К...ж..и, би...т..ка, ме...п..к.\", и добавлено, уже другим почерком: \"Музыкальный кружок\"."
     "Рядом с последней надписью красовалось сердечко, нарисованное ручкой. Листок полностью промок, и было видно, что на обратной стороне что-то написано."
@@ -116,6 +116,8 @@ label unfathomable_feeling_epilogue_2:
     show mi normal apron at left
     show sm normal shirt at right
     with dissolve
+
+    play music music_list["trapped_in_dreams"] loop fadein 2
 
     mi "Держи."
     "Она поставила тарелку перед Семёном."
@@ -160,6 +162,8 @@ label unfathomable_feeling_epilogue_2:
     show unblink
     $ renpy.pause(1.5, hard=True)
     window show
+
+    play music music_list["everlasting_summer"] loop fadein 2
 
     "У каждой истории есть свои выборы. Они бывают незначительные, решающие, тяжёлые, ложные и с несколькими вариантами развития событий. Иногда кажется, что от твоего выбора здесь и сейчас ничего не зависит."
     "У каждой истории есть свои выборы. И не существует историй, в которых от одного выбора зависела бы вся остальная судьба человека. Почти не существует..."

@@ -10,11 +10,11 @@ label unfathomable_feeling_day_7:
 
     $ renpy.pause(1.0, hard=True)
 
+    play music music_list["raindrops"] loop fadein 2
+
     "В нашей жизни бывают моменты, которые не хочется отпускать до последнего. Тянуть до самого конца, наслаждаясь каждой секундой."
 
     scene ext_beach_day with fade
-
-    play music music_list["i_want_to_play"] loop fadein 2
     play ambience ambience_lake_shore_evening loop fadein 4
 
     window show
@@ -70,6 +70,9 @@ label unfathomable_feeling_day_7:
     show mi normal pioneer
     with fade
 
+    play music music_list["waltz_of_doubts"] loop fadein 2
+    play ambience ambience_camp_center_day loop fadein 4
+
     "Мы прошли пару десятков метров и оказались на площади. В лагере было совсем не людно, все были в своих домиках и собирались к отъезду."
     
     me "Помочь тебе с вещами?"
@@ -87,6 +90,8 @@ label unfathomable_feeling_day_7:
     scene int_house_of_un_day
     show mi normal pioneer
     with fade
+
+    play ambience ambience_lake_shore_day loop fadein 4
 
     mi "Чемоданчик?"
     "Я ошарашено смотрел в сторону огромной сумки на полу."
@@ -138,6 +143,8 @@ label unfathomable_feeling_day_7:
     me "Точно. Ладно, давай переоденемся и через пару минут у входа."
     "Сказал я и вышел из домика, тут же завернув в соседний."
 
+    play ambience ambience_camp_center_day loop fadein 4
+
     window hide
     scene ext_house_of_un_day with dissolve
 
@@ -154,6 +161,8 @@ label unfathomable_feeling_day_7:
     scene int_house_male_day with dissolve
     window show
 
+    play ambience ambience_int_cabin_day loop fadein 4
+
     "\"Прощай моя обитель...\" - мысленно произнёс я, проводя пальцами по ободранной обшивке двери шкафа. Достав оттуда свитер и пальто, я перекинул их через плечо и направился к кровати."
     
     "Быстро переодевшись, я положил смартфон в карман, закинув туда же наушники. Вышел я в свитере и джинсах, со свёрнутым пальто наперевес, держа свободной рукой сложенную форму."
@@ -169,14 +178,16 @@ label unfathomable_feeling_day_7:
     
     "Мику тут же поняла меня и схватилась за мою руку, так и не отпустив её до самого домика вожатой."
     
-    scene ext_house_of_mt_day with fade
+    scene ext_house_of_mt_rain with fade
     
+    play music music_list["smooth_machine"] loop fadein 2
+
     play sound sfx_knock_door2
 
     mt "Открыто!"
     "Донеслось изнутри. Я потянул дверь, и мы зашли."
     
-    scene int_house_of_mt_day
+    scene int_house_of_mt_rain
     show mt normal pioneer at right
     show mi normal summer at left
     with dissolve
@@ -188,10 +199,10 @@ label unfathomable_feeling_day_7:
     
     "Вожатая оживилась, приняла два сложенных комплекта, положив их на соседнюю кровать, которая уже была забита, и кинула неодобрительный взор на наши руки, сцепленные в замке."
     
-    me "Хорошо, свободны. Мику, жду ключа от кружка, а пока можете отдохнуть. Автобус задержится на час из-за дождя."
+    mt "Хорошо, свободны. Мику, жду ключа от кружка, а пока можете отдохнуть. Автобус задержится на час из-за дождя."
     "Она протянула нам пакет с едой, и мы вышли."
 
-    scene ext_house_of_mt_day
+    scene ext_house_of_mt_rain
     show mi grin summer
     with dissolve
 
@@ -203,6 +214,7 @@ label unfathomable_feeling_day_7:
 
     scene ext_musclub_rain with fade
 
+    play music music_list["get_to_know_me_better"] loop fadein 2
     play ambience ambience_lake_shore_rainfall loop fadein 4
 
     "Дождь всё усиливался, намереваясь превратиться в настоящий ливень. Мы ускорили шаг, и вскоре перед нами возникло здание музыкального клуба. Щелкнув замком, дверь нехотя отворилась, а поток ледяного ветра загнал нас внутрь."
@@ -229,7 +241,7 @@ label unfathomable_feeling_day_7:
 
     "Я обнял её за плечо и прижал к себе."
     mi "Так намного лучше..."
-    "Произнесла она немного озябшим голосом и посмотрела мне в глаза"
+    "Произнесла она немного озябшим голосом и посмотрела мне в глаза."
     
     "Поцелуи, объятия. Это всё должно было войти в привычку, но у нас не получалось прекращать получать от этого удовольствие. И вот снова, я не могу устоять перед губами Мику. Перед её просящим взглядом и теплым дыханием. И вновь я отдаюсь забвению..."
 
@@ -282,8 +294,9 @@ label unfathomable_feeling_day_7:
     me "Ладно, пойдем..."
     "Пропыхтел я, вставая со стула."
 
-    scene ext_musclub_rain with dissolve
+    scene ext_musclub_day with dissolve
 
+    play music music_list["tried_to_bring_it_back"] loop fadein 2
     play ambience ambience_camp_center_day loop fadein 4
 
     "На улице было свежо и прохладно. В нос пробивался запах озона, и я заметил, что Мику также наслаждается природой."
@@ -320,6 +333,8 @@ label unfathomable_feeling_day_7:
     scene epilogue_inbus_1 with dissolve
 
     $ unfathomable_feeling_open_image_gallery("cg", 3, 3)
+
+    play music music_list["farewell_to_the_past_full"] loop fadein 2
 
     "Через пару минут я уже сидел рядом с любимой и наблюдал, как она разглядывает зелень, пролетающую мимо автобуса."
     "Она начала весело говорить о том, что нас ждёт в реальном мире, как она однажды приготовит мне яичницу на завтрак и мы заживём спокойной, размеренной жизнью."
