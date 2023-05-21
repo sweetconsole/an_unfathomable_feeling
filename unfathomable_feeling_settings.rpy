@@ -8,8 +8,57 @@ init:
 
     $ scorpions_maybe_i_maybe_you = path_dir + "sounds/music/Scorpions_Maybe_I_Maybe_You.ogg"
 
+    $ sfx_clock_transition_sound = path_dir + "sounds/sfx/sfx_clock_transition_sound.ogg"
     $ sfx_jump_into_hole = path_dir + "sounds/sfx/sfx_jump_into_hole.ogg" 
     $ sfx_blow_to_the_glass = path_dir + "sounds/sfx/sfx_blow_to_the_glass.ogg"
+
+    define gallery_position = ((190, 130), (540, 130), (190, 530), (540, 530))
+
+    default img_now = None
+    default gallery_type = "bg"
+    default gallery_page = 0
+
+    if not persistent.gallery:
+        $ persistent.gallery = {
+            "cg": [[
+                    ["day2_breakfast.jpg", False],
+                    ["daytime_sky.jpg", False],
+                    ["me_mi_dance.jpg", False],
+                    ["me_mi_guitar_musclub.jpg", False]
+                ],[
+                    ["me_mirror_normal.jpg", False],
+                    ["me_mi_piano_musclub.jpg", False],
+                    ["un_crazy_blood.jpg", False],
+                    ["un_crazy_torch.jpg", False],
+                ],[
+                    ["mi_piano_musclub.jpg", False],
+                    ["campfire.jpg", False],
+                    ["epilogue_inbus_1.jpg", False],
+                    ["mi_boat.jpg", False],
+                ],
+            ],
+            "bg": [[
+                    ["ext_house_male_day.jpg", False],
+                    ["ext_shower_room.jpg", False],
+                    ["ext_storage_day.jpg", False],
+                    ["int_bus_rain_sunset.jpg", False]
+                ],[
+                    ["int_house_male_day.jpg", False],
+                    ["int_old_building_hatch.jpg", False],
+                    ["int_kitchen.jpg", False],
+                    ["ext_pathway_boat_station.jpg", False],
+                ],[
+                    ["int_dining_room_day.jpg", False],
+                    ["int_dining_table_day.jpg", False],
+                    ["int_dva_dish_day.jpg", False],
+                    ["ext_beach_water_sunset.jpg", False],
+                ],[
+                    ["ext_bush_sunset.jpg", False],
+                    ["int_bus_window_view.jpg", False],
+                    ["int_flat_day.jpg", False],
+                ],
+            ]   
+        }
 
     image ext_beach_water_day = path_dir + "images/bg/ext_beach_water_day.jpg"
     image ext_beach_water_sunset = path_dir + "images/bg/ext_beach_water_sunset.jpg"
@@ -70,6 +119,8 @@ init:
     image list_indigrients = path_dir + "images/misc/list_indigrients.png"
     image phone disable = path_dir + "images/misc/phone_disable.png"
     image phone enable = path_dir + "images/misc/phone_enable.png"
+
+    image unfathomable_feeling_clock = path_dir + "images/clock.png"
 
     # Cook
 

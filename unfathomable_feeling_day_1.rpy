@@ -829,8 +829,7 @@ label unfathomable_feeling_day_1:
     mi "Это хорошо, а я твоя соседка получается, если пригодится что-нибудь, соль там, заходи."
     "Она залилась краской, попрощалась и впорхнула в свой домик."
 
-    show blink
-    pause(1.5)
+    $ unfathomable_feeling_timeskip()
 
     play music music_list["what_do_you_think_of_me"] loop fadein 2
 

@@ -27,7 +27,7 @@ init 2:
 
         textbutton "Выход":
             xpos 160
-            ypos 880
+            ypos 620
             text_idle_color "#fff"
             text_hover_color "#aaa"
             background "#000"
