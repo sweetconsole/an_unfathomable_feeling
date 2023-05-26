@@ -119,7 +119,7 @@ label unfathomable_feeling_day_6:
 
     $ unfathomable_feeling_open_image_gallery("bg", 3, 1)
 
-    play music music_list["goodbye_home_shores"] loop fadein 2
+    play music music_list["reflection_on_water"] loop fadein 2
     play ambience ambience_dining_hall_empty loop fadein 4
 
     "В столовой оказалось несколько пионеров и заспанная повариха. Я подошёл к ней. Интересно, что они могли успеть приготовить в такую рань?"

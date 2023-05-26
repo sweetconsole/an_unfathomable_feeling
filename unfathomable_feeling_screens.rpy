@@ -7,7 +7,7 @@ init 2:
 
         textbutton "Играть":
             xpos 160
-            ypos 220
+            ypos 200
             text_idle_color "#fff"
             text_hover_color "#aaa"
             background "#000"
@@ -17,7 +17,7 @@ init 2:
 
         textbutton "Галерея":
             xpos 160
-            ypos 400
+            ypos 360
             text_idle_color "#fff"
             text_hover_color "#aaa"
             background "#000"
@@ -27,13 +27,25 @@ init 2:
 
         textbutton "Выход":
             xpos 160
-            ypos 580
+            ypos 540
             text_idle_color "#fff"
             text_hover_color "#aaa"
             background "#000"
             text_size 65
             text_font path_dir + "fonts/balloon_xbd.ttf"
             action MainMenu(confirm=False)
+
+        imagebutton:
+            xpos 100
+            ypos 900
+            idle path_dir + "images/icons/vk.png"
+            action NullAction(), OpenURL("https://vk.com/straightarmsnc")
+
+        imagebutton:
+            xpos 224
+            ypos 900
+            idle path_dir + "images/icons/da.png"
+            action NullAction(), OpenURL("https://www.donationalerts.com/r/sweetconsole")
     
     screen unfathomable_feeling_gallery_quest:
         tag menu
